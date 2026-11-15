@@ -1,0 +1,5328 @@
+* {
+
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #080d1b;
+
+    color: #e6edf7;
+
+}
+
+
+
+.sidebar {
+
+    width: 220px;
+
+    height: 100vh;
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    padding: 24px 16px;
+
+    background: #111a2d;
+
+    border-right: 1px solid #263753;
+
+}
+
+
+
+.logo {
+
+    color: #38bdf8;
+
+    font-size: 25px;
+
+    margin: 0;
+
+    letter-spacing: 1px;
+
+}
+
+
+
+.subtitle {
+
+    color: #9aa9bf;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 55px;
+
+}
+
+
+
+nav {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+}
+
+
+
+.nav-button {
+
+    border: 0;
+
+    background: transparent;
+
+    color: #cbd5e1;
+
+    padding: 15px 12px;
+
+    border-radius: 9px;
+
+    text-align: left;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+}
+
+
+
+.nav-button:hover,
+
+.nav-button.active {
+
+    background: #1b304b;
+
+    color: #38bdf8;
+
+}
+
+
+
+.main {
+
+    margin-left: 220px;
+
+    padding: 32px 40px;
+
+    min-height: 100vh;
+
+}
+
+
+
+.page {
+
+    display: block;
+
+}
+
+
+
+.hidden {
+
+    display: none !important;
+
+}
+
+
+
+.eyebrow {
+
+    color: #9caec4;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    margin: 0 0 12px;
+
+}
+
+
+
+h1 {
+
+    font-size: 34px;
+
+    margin: 0 0 12px;
+
+}
+
+
+
+h2 {
+
+    font-size: 21px;
+
+    margin: 30px 0 16px;
+
+}
+
+
+
+h3 {
+
+    margin-top: 20px;
+
+}
+
+
+
+.muted,
+
+.metric p,
+
+.mission-card p {
+
+    color: #a9b7ca;
+
+}
+
+
+
+.mission-card {
+
+    margin: 32px 0;
+
+    padding: 24px;
+
+    width: 340px;
+
+    max-width: 100%;
+
+    background: #111a2d;
+
+    border: 1px solid #385276;
+
+    border-radius: 13px;
+
+}
+
+
+
+.mission-card span {
+
+    color: #a9b7ca;
+
+    font-size: 13px;
+
+}
+
+
+
+.mission-card strong {
+
+    display: block;
+
+    color: #38bdf8;
+
+    font-size: 40px;
+
+    margin: 8px 0;
+
+}
+
+
+
+.mission-card p {
+
+    font-size: 13px;
+
+    margin-bottom: 0;
+
+}
+
+
+
+.cards {
+
+    display: grid;
+
+    grid-template-columns: repeat(5, minmax(150px, 1fr));
+
+    gap: 16px;
+
+}
+
+
+
+.metric {
+
+    min-height: 165px;
+
+    padding: 24px;
+
+    background: #111a2d;
+
+    border: 1px solid #385276;
+
+    border-radius: 13px;
+
+}
+
+
+
+.metric span {
+
+    color: #a9b7ca;
+
+    font-size: 13px;
+
+}
+
+
+
+.metric strong {
+
+    display: block;
+
+    font-size: 30px;
+
+    margin-top: 22px;
+
+}
+
+
+
+.metric small {
+
+    font-size: 14px;
+
+    color: #a9b7ca;
+
+}
+
+
+
+.metric p {
+
+    font-size: 14px;
+
+    margin-top: 15px;
+
+}
+
+
+
+.primary-button,
+
+.secondary-button {
+
+    padding: 14px 22px;
+
+    border: 0;
+
+    border-radius: 9px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: 14px;
+
+}
+
+
+
+.primary-button {
+
+    background: #0891b2;
+
+    color: white;
+
+}
+
+
+
+.primary-button:hover {
+
+    background: #0e7490;
+
+}
+
+
+
+.secondary-button {
+
+    background: #263753;
+
+    color: #e6edf7;
+
+}
+
+
+
+.secondary-button:hover {
+
+    background: #385276;
+
+}
+
+
+
+.alert {
+
+    margin-top: 22px;
+
+    padding: 18px 20px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    border: 1px solid;
+
+}
+
+
+
+.alert.normal {
+
+    background: #1c2b25;
+
+    border-color: #32835c;
+
+    color: #86efac;
+
+}
+
+
+
+.alert.warning {
+
+    background: #352819;
+
+    border-color: #e5a12b;
+
+    color: #facc15;
+
+}
+
+
+
+.emergency {
+
+    margin-top: 22px;
+
+    padding: 24px;
+
+    background: #35151d;
+
+    border: 2px solid #ef4444;
+
+    border-radius: 12px;
+
+    color: #fecaca;
+
+}
+
+
+
+.emergency h2 {
+
+    color: #f87171;
+
+    margin-top: 0;
+
+}
+
+
+
+.emergency li {
+
+    margin: 10px 0;
+
+}
+
+
+
+.demo-note {
+
+    color: #fca5a5;
+
+    font-size: 13px;
+
+}
+
+
+
+.panel {
+
+    margin-top: 28px;
+
+    padding: 24px;
+
+    background: #111a2d;
+
+    border: 1px solid #385276;
+
+    border-radius: 13px;
+
+}
+
+
+
+.panel h2 {
+
+    margin-top: 8px;
+
+}
+
+
+
+canvas {
+
+    width: 100%;
+
+    max-height: 360px;
+
+}
+
+
+
+.table-scroll {
+
+    overflow-x: auto;
+
+}
+
+
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 15px;
+
+    text-align: left;
+
+}
+
+
+
+th,
+
+td {
+
+    padding: 15px;
+
+    border-bottom: 1px solid #263753;
+
+}
+
+
+
+th {
+
+    color: #38bdf8;
+
+}
+
+
+
+form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    max-width: 500px;
+
+}
+
+
+
+form label {
+
+    color: #cbd5e1;
+
+    margin-top: 8px;
+
+}
+
+
+
+form input {
+
+    background: #080d1b;
+
+    border: 1px solid #385276;
+
+    color: #e6edf7;
+
+    border-radius: 8px;
+
+    padding: 12px;
+
+    font-size: 15px;
+
+}
+
+
+
+#checkin-message {
+
+    color: #86efac;
+
+}
+
+
+
+@media (max-width: 1100px) {
+
+    .cards {
+
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+
+    }
+
+}
+
+
+
+@media (max-width: 700px) {
+
+    .sidebar {
+
+        position: relative;
+
+        width: 100%;
+
+        height: auto;
+
+    }
+
+
+
+    .subtitle {
+
+        margin-bottom: 18px;
+
+    }
+
+
+
+    nav {
+
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+
+    .main {
+
+        margin-left: 0;
+
+        padding: 24px 16px;
+
+    }
+
+
+
+    h1 {
+
+        font-size: 28px;
+
+    }
+
+
+
+    .cards {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+/* ASTROGUARD - Button hover effects */
+
+
+
+button,
+
+.nav-btn {
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+
+}
+
+
+
+button:hover,
+
+.nav-btn:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 0 15px rgba(0, 200, 255, 0.5);
+
+    filter: brightness(1.2);
+
+}
+
+
+
+button:active,
+
+.nav-btn:active {
+
+    transform: translateY(0) scale(0.97);
+
+}
+
+
+
+button:focus-visible,
+
+.nav-btn:focus-visible {
+
+    outline: 2px solid #22d3ee;
+
+    outline-offset: 3px;
+
+}
+
+/* Health card animations */
+
+
+
+.health-card {
+
+    transition: transform 0.3s ease,
+
+                box-shadow 0.3s ease,
+
+                border-color 0.3s ease;
+
+}
+
+
+
+.health-card:hover {
+
+    transform: translateY(-5px);
+
+    border-color: #22d3ee;
+
+    box-shadow: 0 0 18px rgba(34, 211, 238, 0.2);
+
+}
+
+/* Health Overview hover effects */
+
+
+
+.health-card {
+
+    cursor: pointer;
+
+    transition: transform 0.3s ease,
+
+                box-shadow 0.3s ease,
+
+                border-color 0.3s ease,
+
+                background 0.3s ease;
+
+}
+
+
+
+.health-card:hover {
+
+    transform: translateY(-6px) scale(1.02);
+
+    border-color: #22d3ee;
+
+    box-shadow: 0 0 20px rgba(34, 211, 238, 0.35);
+
+    background: #17243d;
+
+}
+
+/* Futuristic space background */
+
+body {
+
+    background:
+
+        radial-gradient(
+
+            circle at 80% 15%,
+
+            rgba(0, 180, 255, 0.09),
+
+            transparent 30%
+
+        ),
+
+        radial-gradient(
+
+            circle at 20% 80%,
+
+            rgba(0, 100, 255, 0.08),
+
+            transparent 35%
+
+        ),
+
+        #070d1c;
+
+}
+
+
+
+/* Subtle glowing grid */
+
+main {
+
+    background-image:
+
+        linear-gradient(
+
+            rgba(34, 211, 238, 0.025) 1px,
+
+            transparent 1px
+
+        ),
+
+        linear-gradient(
+
+            90deg,
+
+            rgba(34, 211, 238, 0.025) 1px,
+
+            transparent 1px
+
+        );
+
+    background-size: 35px 35px;
+
+}
+
+/* Health card accent */
+
+.health-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+
+.health-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 15%;
+
+    width: 70%;
+
+    height: 2px;
+
+    background: #22d3ee;
+
+    box-shadow: 0 0 12px #22d3ee;
+
+    opacity: 0.6;
+
+    transition: opacity 0.3s ease;
+
+}
+
+
+
+.health-card:hover::before {
+
+    opacity: 1;
+
+}
+
+/* Dashboard entrance animation */
+
+@keyframes fadeInUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(12px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+
+.health-card {
+
+    animation: fadeInUp 0.6s ease both;
+
+}
+
+
+
+.health-card:nth-child(2) {
+
+    animation-delay: 0.1s;
+
+}
+
+
+
+.health-card:nth-child(3) {
+
+    animation-delay: 0.2s;
+
+}
+
+
+
+.health-card:nth-child(4) {
+
+    animation-delay: 0.3s;
+
+}
+
+
+
+.health-card:nth-child(5) {
+
+    animation-delay: 0.4s;
+
+}
+
+/* Health status panel */
+
+
+
+.health-alert {
+
+    padding: 18px 22px;
+
+    border-radius: 10px;
+
+    margin: 20px 0;
+
+    font-weight: 600;
+
+    transition: background 0.3s ease,
+
+                border-color 0.3s ease;
+
+}
+
+
+
+/* Green: normal readings */
+
+.health-alert.normal {
+
+    background: #103526;
+
+    border: 1px solid #22c55e;
+
+    color: #4ade80;
+
+}
+
+
+
+/* Red: readings exceed demo limits */
+
+.health-alert.warning {
+
+    background: #421923;
+
+    border: 1px solid #ef4444;
+
+    color: #f87171;
+
+}
+
+
+
+/* ===== ASTROGUARD GALAXY BACKGROUND ===== */
+
+
+
+body {
+
+    background-color: #050816 !important;
+
+    background-image:
+
+        radial-gradient(ellipse at 15% 20%,
+
+            rgba(124, 58, 237, 0.45), transparent 40%),
+
+        radial-gradient(ellipse at 85% 35%,
+
+            rgba(14, 165, 233, 0.35), transparent 45%),
+
+        radial-gradient(ellipse at 50% 90%,
+
+            rgba(79, 70, 229, 0.3), transparent 40%),
+
+        radial-gradient(2px 2px at 10% 15%,
+
+            white 50%, transparent 100%),
+
+        radial-gradient(1px 1px at 30% 75%,
+
+            white 50%, transparent 100%),
+
+        radial-gradient(2px 2px at 65% 25%,
+
+            white 50%, transparent 100%),
+
+        radial-gradient(1px 1px at 85% 80%,
+
+            white 50%, transparent 100%),
+
+        radial-gradient(2px 2px at 45% 45%,
+
+            white 50%, transparent 100%);
+
+    background-size:
+
+        auto, auto, auto,
+
+        180px 180px,
+
+        230px 230px,
+
+        200px 200px,
+
+        250px 250px,
+
+        300px 300px;
+
+    background-attachment: fixed;
+
+}
+
+
+
+/* Make the dashboard background transparent */
+
+main.main {
+
+    background: transparent !important;
+
+}
+
+/* ===== ANIMATED GALAXY STARS ===== */
+
+
+
+body::after {
+
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: 0;
+
+    opacity: 0.5;
+
+    background-image:
+
+        radial-gradient(2px 2px at 20% 30%,
+
+            white 50%, transparent 100%),
+
+        radial-gradient(1px 1px at 70% 60%,
+
+            white 50%, transparent 100%),
+
+        radial-gradient(2px 2px at 85% 15%,
+
+            #7dd3fc 50%, transparent 100%),
+
+        radial-gradient(1px 1px at 40% 85%,
+
+            white 50%, transparent 100%);
+
+    background-size: 300px 300px;
+
+    animation: starTwinkle 4s ease-in-out infinite alternate;
+
+}
+
+
+
+@keyframes starTwinkle {
+
+    from {
+
+        opacity: 0.2;
+
+    }
+
+    to {
+
+        opacity: 0.8;
+
+    }
+
+}
+
+
+
+/* Keep the sidebar in its original position */
+
+.sidebar {
+
+    z-index: 10;
+
+}
+
+
+
+/* Keep dashboard content above the stars */
+
+main {
+
+    position: relative;
+
+    z-index: 1;
+
+}
+
+
+
+/* ===== ASTROGUARD MISSION STATUS ===== */
+
+
+
+#dashboard .mission-status {
+
+    display: block;
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 24px;
+
+    margin: 25px 0;
+
+    border: 1px solid rgba(56, 189, 248, 0.5);
+
+    border-radius: 18px;
+
+    background: rgba(8, 18, 40, 0.92);
+
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.12);
+
+}
+
+
+
+/* Panel heading */
+
+#dashboard .status-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-bottom: 22px;
+
+}
+
+
+
+#dashboard .status-header h2 {
+
+    margin: 0;
+
+    padding: 0;
+
+    border: none;
+
+    color: #7dd3fc;
+
+    font-size: 19px;
+
+    letter-spacing: 2px;
+
+}
+
+
+
+/* Online indicator */
+
+#dashboard .online-indicator {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    color: #4ade80;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+}
+
+
+
+#dashboard .status-dot {
+
+    width: 9px;
+
+    height: 9px;
+
+    border-radius: 50%;
+
+    background: #4ade80;
+
+    box-shadow: 0 0 12px #4ade80;
+
+    animation: statusPulse 2s infinite;
+
+}
+
+
+
+@keyframes statusPulse {
+
+    50% {
+
+        opacity: 0.45;
+
+        box-shadow: 0 0 3px #4ade80;
+
+    }
+
+}
+
+
+
+/* Three mission information cards */
+
+#dashboard .mission-details {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 16px;
+
+}
+
+
+
+#dashboard .mission-info {
+
+    box-sizing: border-box;
+
+    min-width: 0;
+
+    padding: 20px;
+
+    border: 1px solid rgba(56, 189, 248, 0.3);
+
+    border-radius: 14px;
+
+    background: linear-gradient(
+
+        145deg,
+
+        rgba(22, 43, 75, 0.95),
+
+        rgba(10, 20, 42, 0.95)
+
+    );
+
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+
+
+#dashboard .mission-info:hover {
+
+    transform: translateY(-5px);
+
+    border-color: #38bdf8;
+
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.25);
+
+}
+
+
+
+#dashboard .mission-info .status-label {
+
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #7dd3fc;
+
+    font-size: 11px;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+
+#dashboard .mission-info strong {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #f0f9ff;
+
+    font-size: 20px;
+
+}
+
+
+
+#dashboard .mission-info p {
+
+    margin: 0;
+
+    color: #94a3b8;
+
+    font-size: 13px;
+
+}
+
+
+
+/* Mobile layout */
+
+@media (max-width: 700px) {
+
+    #dashboard .mission-details {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+
+/* ===== HEALTH OVERVIEW CARDS ===== */
+
+
+
+#dashboard .metric {
+
+    background: rgba(12, 25, 49, 0.94);
+
+    border: 1px solid rgba(56, 189, 248, 0.3);
+
+    border-radius: 16px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+
+    transition: transform 0.3s ease,
+
+                border-color 0.3s ease,
+
+                box-shadow 0.3s ease;
+
+}
+
+
+
+#dashboard .metric:hover {
+
+    transform: translateY(-6px);
+
+    border-color: #38bdf8;
+
+    box-shadow: 0 0 22px rgba(56, 189, 248, 0.25);
+
+}
+
+
+
+#dashboard .metric strong {
+
+    color: #e0f2fe;
+
+}
+
+
+
+#dashboard .metric small {
+
+    color: #7dd3fc;
+
+}
+
+
+
+/* ===== GLOWING PLANET ===== */
+
+
+
+#dashboard {
+
+    position: relative;
+
+}
+
+
+
+.planet-illustration {
+
+    position: absolute;
+
+    top: 100px;
+
+    right: 45px;
+
+    width: 190px;
+
+    height: 190px;
+
+    display: grid;
+
+    place-items: center;
+
+    pointer-events: none;
+
+    z-index: 0;
+
+}
+
+
+
+.planet {
+
+    position: relative;
+
+    width: 145px;
+
+    height: 145px;
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(
+
+            circle at 30% 25%,
+
+            #bfdbfe 0%,
+
+            #60a5fa 15%,
+
+            #2563eb 42%,
+
+            #312e81 75%,
+
+            #0f172a 100%
+
+        );
+
+    box-shadow:
+
+        0 0 20px rgba(96, 165, 250, 0.6),
+
+        0 0 55px rgba(59, 130, 246, 0.35),
+
+        inset -18px -12px 30px rgba(0, 0, 30, 0.6);
+
+}
+
+
+
+/* Planet ring */
+
+.planet::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+
+    height: 55px;
+
+    left: -38px;
+
+    top: 45px;
+
+    border: 7px solid rgba(125, 211, 252, 0.75);
+
+    border-left-color: rgba(167, 139, 250, 0.8);
+
+    border-right-color: rgba(56, 189, 248, 0.3);
+
+    border-radius: 50%;
+
+    transform: rotate(-20deg);
+
+    box-shadow: 0 0 12px rgba(56, 189, 248, 0.5);
+
+}
+
+
+
+/* Keep planet behind dashboard text */
+
+#dashboard > *:not(.planet-illustration) {
+
+    position: relative;
+
+    z-index: 1;
+
+}
+
+
+
+@media (max-width: 800px) {
+
+    .planet-illustration {
+
+        display: none;
+
+    }
+
+}
+
+
+
+/* ===== FUTURISTIC SIDEBAR ===== */
+
+
+
+.sidebar {
+
+    background: rgba(5, 12, 30, 0.96);
+
+    border-right: 1px solid rgba(56, 189, 248, 0.35);
+
+    box-shadow: 5px 0 25px rgba(14, 165, 233, 0.12);
+
+}
+
+
+
+/* Sidebar navigation buttons */
+
+.sidebar .nav-button {
+
+    display: flex;
+
+    align-items: center;
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 13px 16px;
+
+    margin: 6px 0;
+
+    border: 1px solid transparent;
+
+    border-radius: 10px;
+
+    background: transparent;
+
+    color: #aabbd1;
+
+    text-align: left;
+
+    transition: all 0.25s ease;
+
+}
+
+
+
+/* Hover effect */
+
+.sidebar .nav-button:hover {
+
+    background: rgba(56, 189, 248, 0.12);
+
+    color: #ffffff;
+
+    border-color: rgba(56, 189, 248, 0.4);
+
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.15);
+
+    transform: translateX(4px);
+
+}
+
+
+
+/* Active navigation button */
+
+.sidebar .nav-button.active {
+
+    background: linear-gradient(
+
+        90deg,
+
+        rgba(8, 145, 178, 0.35),
+
+        rgba(30, 64, 175, 0.15)
+
+    );
+
+    color: #7dd3fc;
+
+    border: 1px solid rgba(56, 189, 248, 0.65);
+
+    box-shadow:
+
+        inset 3px 0 0 #38bdf8,
+
+        0 0 15px rgba(56, 189, 248, 0.15);
+
+}
+
+
+
+/* Sidebar title */
+
+.sidebar h2 {
+
+    color: #e0f2fe;
+
+    text-shadow: 0 0 12px rgba(56, 189, 248, 0.5);
+
+}
+
+
+
+/* Sidebar separators */
+
+.sidebar hr {
+
+    border: none;
+
+    border-top: 1px solid rgba(56, 189, 248, 0.2);
+
+}
+
+
+
+/* ===== ASTRONAUT WARNING PROCEDURE ===== */
+
+
+
+.warning-procedure {
+
+    margin: 22px 0;
+
+    padding: 22px;
+
+    background: rgba(69, 39, 10, 0.85);
+
+    border: 1px solid #f59e0b;
+
+    border-radius: 16px;
+
+    box-shadow: 0 0 22px rgba(245, 158, 11, 0.15);
+
+    color: #fef3c7;
+
+}
+
+
+
+.warning-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-bottom: 22px;
+
+}
+
+
+
+.warning-icon {
+
+    font-size: 30px;
+
+    color: #fbbf24;
+
+}
+
+
+
+.warning-heading h2 {
+
+    margin: 0 0 5px;
+
+    color: #fbbf24;
+
+    font-size: 18px;
+
+}
+
+
+
+.warning-heading p {
+
+    margin: 0;
+
+    color: #fde68a;
+
+    font-size: 13px;
+
+}
+
+
+
+.warning-procedure h3 {
+
+    color: #fbbf24;
+
+    font-size: 12px;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 14px;
+
+}
+
+
+
+.warning-actions {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+
+}
+
+
+
+.warning-action {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    padding: 14px;
+
+    border: 1px solid rgba(251, 191, 36, 0.25);
+
+    border-radius: 10px;
+
+    background: rgba(30, 20, 10, 0.55);
+
+}
+
+
+
+.action-number {
+
+    color: #fbbf24;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+}
+
+
+
+.warning-action strong {
+
+    display: block;
+
+    color: #fef3c7;
+
+    font-size: 13px;
+
+    margin-bottom: 5px;
+
+}
+
+
+
+.warning-action p {
+
+    color: #d6c6a5;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    margin: 0;
+
+}
+
+
+
+.warning-note {
+
+    color: #fcd34d;
+
+    font-size: 11px;
+
+    margin: 18px 0 0;
+
+}
+
+
+
+@media (max-width: 700px) {
+
+    .warning-actions {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+/* CREW LOCATION RADAR */
+
+.radar-panel {
+
+    margin-top: 25px;
+
+    padding: 20px;
+
+    border: 1px solid rgba(0, 220, 255, 0.25);
+
+    border-radius: 15px;
+
+    background: rgba(0, 20, 45, 0.55);
+
+    text-align: center;
+
+}
+
+
+
+.radar-panel h3 {
+
+    color: #8beaff;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 18px;
+
+}
+
+
+
+.radar {
+
+    position: relative;
+
+    width: 180px;
+
+    height: 180px;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(0, 220, 255, 0.6);
+
+    background:
+
+        linear-gradient(rgba(0, 220, 255, 0.12) 1px, transparent 1px),
+
+        linear-gradient(90deg, rgba(0, 220, 255, 0.12) 1px, transparent 1px),
+
+        radial-gradient(circle, #123b59, #06182e 75%);
+
+    background-size: 30px 30px, 30px 30px, auto;
+
+    box-shadow: 0 0 20px rgba(0, 220, 255, 0.2);
+
+}
+
+
+
+.radar-ring {
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    border: 1px solid rgba(0, 220, 255, 0.3);
+
+    border-radius: 50%;
+
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+.ring-one {
+
+    width: 50px;
+
+    height: 50px;
+
+}
+
+
+
+.ring-two {
+
+    width: 100px;
+
+    height: 100px;
+
+}
+
+
+
+.ring-three {
+
+    width: 150px;
+
+    height: 150px;
+
+}
+
+
+
+.radar-sweep {
+
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: 50%;
+
+    background: conic-gradient(
+
+        from 0deg,
+
+        transparent 0deg,
+
+        transparent 270deg,
+
+        rgba(0, 255, 200, 0.05) 300deg,
+
+        rgba(0, 255, 200, 0.5) 360deg
+
+    );
+
+    animation: radar-spin 4s linear infinite;
+
+}
+
+
+
+@keyframes radar-spin {
+
+    to {
+
+        transform: rotate(360deg);
+
+    }
+
+}
+
+
+
+.radar-center {
+
+    position: absolute;
+
+    width: 7px;
+
+    height: 7px;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    background: #00ffcc;
+
+    box-shadow: 0 0 12px #00ffcc;
+
+}
+
+
+
+.radar-dot {
+
+    position: absolute;
+
+    top: 30%;
+
+    left: 65%;
+
+    width: 6px;
+
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #00ffcc;
+
+    box-shadow: 0 0 10px #00ffcc;
+
+    animation: radar-pulse 1.5s ease-in-out infinite;
+
+}
+
+
+
+@keyframes radar-pulse {
+
+    50% {
+
+        opacity: 0.3;
+
+        transform: scale(1.8);
+
+    }
+
+}
+
+
+
+.radar-status {
+
+    margin-top: 12px;
+
+    color: #00ffcc;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+}
+
+/* FUTURISTIC HEALTH CARD EFFECTS */
+
+.metric {
+
+    transition: transform 0.3s ease,
+
+                box-shadow 0.3s ease,
+
+                border-color 0.3s ease;
+
+    border: 1px solid rgba(0, 220, 255, 0.2);
+
+    background: rgba(10, 25, 55, 0.75);
+
+    backdrop-filter: blur(10px);
+
+}
+
+
+
+.metric:hover {
+
+    transform: translateY(-5px);
+
+    border-color: #00d9ff;
+
+    box-shadow:
+
+        0 0 15px rgba(0, 217, 255, 0.3),
+
+        0 0 30px rgba(0, 217, 255, 0.1);
+
+}
+
+/* GLOWING HEALTH WARNING */
+
+.warning-procedure {
+
+    border: 1px solid rgba(255, 165, 0, 0.7);
+
+    border-radius: 16px;
+
+    padding: 22px;
+
+    margin: 20px 0;
+
+    background: linear-gradient(
+
+        135deg,
+
+        rgba(70, 30, 5, 0.85),
+
+        rgba(30, 15, 25, 0.9)
+
+    );
+
+    box-shadow: 0 0 18px rgba(255, 140, 0, 0.2);
+
+    animation: warning-glow 2s ease-in-out infinite alternate;
+
+}
+
+
+
+.warning-procedure.hidden {
+
+    display: none;
+
+}
+
+
+
+.warning-heading h2,
+
+.warning-heading h3 {
+
+    color: #ffb347;
+
+}
+
+
+
+.warning-icon {
+
+    color: #ff9d00;
+
+    text-shadow: 0 0 12px #ff6a00;
+
+}
+
+
+
+.warning-action {
+
+    border: 1px solid rgba(255, 165, 0, 0.25);
+
+    background: rgba(255, 140, 0, 0.07);
+
+    border-radius: 10px;
+
+    transition: background 0.3s ease, transform 0.3s ease;
+
+}
+
+
+
+.warning-action:hover {
+
+    background: rgba(255, 140, 0, 0.16);
+
+    transform: translateX(5px);
+
+}
+
+
+
+.action-number {
+
+    color: #ffad33;
+
+    text-shadow: 0 0 8px rgba(255, 140, 0, 0.7);
+
+}
+
+
+
+.warning-note {
+
+    color: #ffc477;
+
+}
+
+
+
+@keyframes warning-glow {
+
+    from {
+
+        box-shadow: 0 0 10px rgba(255, 140, 0, 0.15);
+
+    }
+
+    to {
+
+        box-shadow: 0 0 25px rgba(255, 100, 0, 0.4);
+
+    }
+
+}
+
+/* ANIMATED HEARTBEAT */
+
+.heartbeat-animation {
+
+    width: 100%;
+
+    height: 60px;
+
+    overflow: hidden;
+
+    margin: 10px 0;
+
+    border-radius: 8px;
+
+    background: rgba(0, 20, 40, 0.4);
+
+}
+
+
+
+.heartbeat-animation svg {
+
+    width: 100%;
+
+    height: 100%;
+
+}
+
+
+
+.heartbeat-line {
+
+    fill: none;
+
+    stroke: #00f5c8;
+
+    stroke-width: 2;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+
+    filter: drop-shadow(0 0 5px #00f5c8);
+
+    stroke-dasharray: 500;
+
+    stroke-dashoffset: 500;
+
+    animation: heartbeat-draw 2s linear infinite;
+
+}
+
+
+
+@keyframes heartbeat-draw {
+
+    to {
+
+        stroke-dashoffset: 0;
+
+    }
+
+}
+
+/* ANIMATED SIDEBAR NAVIGATION */
+
+.sidebar a,
+
+.sidebar button {
+
+    transition:
+
+        background 0.3s ease,
+
+        color 0.3s ease,
+
+        transform 0.3s ease,
+
+        box-shadow 0.3s ease;
+
+}
+
+
+
+.sidebar a:hover,
+
+.sidebar button:hover {
+
+    transform: translateX(5px);
+
+    color: #8beaff;
+
+    background: rgba(0, 210, 255, 0.12);
+
+    box-shadow: inset 3px 0 0 #00d9ff;
+
+}
+
+
+
+.sidebar a.active,
+
+.sidebar button.active {
+
+    color: #8beaff;
+
+    background: rgba(0, 210, 255, 0.15);
+
+    box-shadow: inset 3px 0 0 #00d9ff;
+
+}
+
+/* CREW HEALTH STATUS */
+
+.crew-health-status {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 20px;
+
+    padding: 15px 20px;
+
+    border: 1px solid rgba(0, 220, 255, 0.25);
+
+    border-radius: 12px;
+
+    background: rgba(0, 20, 45, 0.7);
+
+}
+
+
+
+.health-status {
+
+    padding: 8px 16px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+
+.health-status.normal {
+
+    color: #00ffae;
+
+    background: rgba(0, 255, 174, 0.12);
+
+    border: 1px solid #00ffae;
+
+    box-shadow: 0 0 12px rgba(0, 255, 174, 0.2);
+
+}
+
+
+
+.health-status.warning {
+
+    color: #ffb347;
+
+    background: rgba(255, 165, 0, 0.12);
+
+    border: 1px solid #ffb347;
+
+    box-shadow: 0 0 12px rgba(255, 165, 0, 0.3);
+
+}
+
+
+
+.health-status.critical {
+
+    color: #ff4d6d;
+
+    background: rgba(255, 40, 70, 0.12);
+
+    border: 1px solid #ff4d6d;
+
+    box-shadow: 0 0 15px rgba(255, 40, 70, 0.4);
+
+    animation: critical-pulse 1s infinite alternate;
+
+}
+
+
+
+@keyframes critical-pulse {
+
+    from {
+
+        box-shadow: 0 0 5px rgba(255, 40, 70, 0.2);
+
+    }
+
+    to {
+
+        box-shadow: 0 0 20px rgba(255, 40, 70, 0.7);
+
+    }
+
+}
+
+/* GLOWING SPACE PLANETS */
+
+.space-planets {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 0;
+
+    pointer-events: none;
+
+    overflow: hidden;
+
+}
+
+
+
+.glow-planet {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    animation: planet-float 8s ease-in-out infinite;
+
+}
+
+
+
+/* LARGE BLUE PLANET */
+
+.blue-planet {
+
+    width: 170px;
+
+    height: 170px;
+
+    top: 18%;
+
+    right: 8%;
+
+    background: radial-gradient(
+
+        circle at 30% 30%,
+
+        #b7f3ff,
+
+        #3185d8 35%,
+
+        #102b78 70%,
+
+        #050b2b
+
+    );
+
+    box-shadow:
+
+        0 0 25px rgba(0, 180, 255, 0.7),
+
+        0 0 70px rgba(0, 100, 255, 0.35);
+
+}
+
+
+
+/* SMALL PURPLE PLANET */
+
+.purple-planet {
+
+    width: 75px;
+
+    height: 75px;
+
+    left: 7%;
+
+    top: 65%;
+
+    animation-delay: -3s;
+
+    background: radial-gradient(
+
+        circle at 30% 30%,
+
+        #f0c5ff,
+
+        #a34cdb 40%,
+
+        #48206f 75%,
+
+        #16082e
+
+    );
+
+    box-shadow:
+
+        0 0 20px rgba(190, 80, 255, 0.8),
+
+        0 0 55px rgba(150, 50, 255, 0.4);
+
+}
+
+
+
+/* RINGED PLANET */
+
+.ringed-planet {
+
+    width: 110px;
+
+    height: 110px;
+
+    right: 23%;
+
+    bottom: 12%;
+
+    animation-delay: -5s;
+
+    background: radial-gradient(
+
+        circle at 30% 30%,
+
+        #fff0c2,
+
+        #d6a85e 40%,
+
+        #87602d 75%,
+
+        #392512
+
+    );
+
+    box-shadow:
+
+        0 0 25px rgba(255, 190, 100, 0.6),
+
+        0 0 60px rgba(255, 150, 50, 0.25);
+
+}
+
+
+
+.planet-ring {
+
+    position: absolute;
+
+    width: 175px;
+
+    height: 45px;
+
+    top: 32px;
+
+    left: -32px;
+
+    border: 5px solid rgba(255, 218, 150, 0.8);
+
+    border-radius: 50%;
+
+    transform: rotate(-20deg);
+
+    box-shadow: 0 0 12px rgba(255, 190, 100, 0.5);
+
+}
+
+
+
+@keyframes planet-float {
+
+    0%, 100% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-15px);
+
+    }
+
+}
+
+/* =========================================
+
+   ASTROGUARD — SPACE NUTRITION
+
+   ========================================= */
+
+
+
+#nutrition {
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding-bottom: 50px;
+
+}
+
+
+
+/* Page Header */
+
+#nutrition .page-header {
+
+    margin-bottom: 30px;
+
+}
+
+
+
+#nutrition .page-header h1 {
+
+    margin: 0;
+
+    color: #f2f7ff;
+
+    font-size: 36px;
+
+    letter-spacing: 3px;
+
+    text-shadow: 0 0 18px rgba(80, 190, 255, 0.45);
+
+}
+
+
+
+#nutrition .page-header p {
+
+    margin-top: 10px;
+
+    color: #9fb4cf;
+
+    font-size: 15px;
+
+}
+
+
+
+
+
+/* =========================================
+
+   DAILY NUTRITION STATUS
+
+   ========================================= */
+
+
+
+.nutrition-status {
+
+    position: relative;
+
+    padding: 28px;
+
+    margin-bottom: 24px;
+
+
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(60, 200, 255, 0.35);
+
+
+
+    background:
+
+        linear-gradient(
+
+            135deg,
+
+            rgba(12, 37, 75, 0.92),
+
+            rgba(16, 18, 55, 0.9)
+
+        );
+
+
+
+    box-shadow:
+
+        0 0 25px rgba(0, 170, 255, 0.12),
+
+        inset 0 0 30px rgba(0, 100, 255, 0.04);
+
+
+
+    overflow: hidden;
+
+}
+
+
+
+.nutrition-status::before {
+
+    content: "";
+
+    position: absolute;
+
+
+
+    width: 180px;
+
+    height: 180px;
+
+
+
+    right: -60px;
+
+    top: -80px;
+
+
+
+    border-radius: 50%;
+
+
+
+    background: radial-gradient(
+
+        circle,
+
+        rgba(0, 200, 255, 0.18),
+
+        transparent 70%
+
+    );
+
+
+
+    pointer-events: none;
+
+}
+
+
+
+.nutrition-status-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+
+
+.nutrition-status h2 {
+
+    margin: 6px 0 0;
+
+    color: #ffffff;
+
+    font-size: 24px;
+
+}
+
+
+
+.nutrition-badge {
+
+    padding: 9px 18px;
+
+
+
+    border-radius: 25px;
+
+
+
+    color: #00ffb3;
+
+    background: rgba(0, 255, 179, 0.08);
+
+
+
+    border: 1px solid #00ffb3;
+
+
+
+    box-shadow:
+
+        0 0 12px rgba(0, 255, 179, 0.25);
+
+
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+
+.nutrition-description {
+
+    max-width: 750px;
+
+    margin-top: 16px;
+
+
+
+    color: #9db3c9;
+
+    line-height: 1.6;
+
+}
+
+
+
+
+
+/* =========================================
+
+   NUTRITION CATEGORY CARDS
+
+   ========================================= */
+
+
+
+.nutrition-grid {
+
+    display: grid;
+
+
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+
+
+    gap: 18px;
+
+
+
+    margin-bottom: 24px;
+
+}
+
+
+
+.nutrition-card {
+
+    display: flex;
+
+    align-items: flex-start;
+
+
+
+    gap: 18px;
+
+
+
+    min-height: 145px;
+
+
+
+    padding: 22px;
+
+
+
+    border-radius: 16px;
+
+
+
+    background:
+
+        linear-gradient(
+
+            145deg,
+
+            rgba(14, 34, 68, 0.88),
+
+            rgba(8, 18, 43, 0.9)
+
+        );
+
+
+
+    border: 1px solid rgba(80, 190, 255, 0.22);
+
+
+
+    box-shadow:
+
+        0 0 15px rgba(0, 150, 255, 0.05);
+
+
+
+    transition:
+
+        transform 0.3s ease,
+
+        border-color 0.3s ease,
+
+        box-shadow 0.3s ease,
+
+        background 0.3s ease;
+
+}
+
+
+
+.nutrition-card:hover {
+
+    transform: translateY(-6px);
+
+
+
+    border-color: rgba(70, 220, 255, 0.7);
+
+
+
+    background:
+
+        linear-gradient(
+
+            145deg,
+
+            rgba(16, 47, 88, 0.95),
+
+            rgba(9, 22, 50, 0.95)
+
+        );
+
+
+
+    box-shadow:
+
+        0 0 18px rgba(0, 210, 255, 0.2),
+
+        0 0 35px rgba(0, 140, 255, 0.08);
+
+}
+
+
+
+.nutrition-icon {
+
+    width: 58px;
+
+    height: 58px;
+
+
+
+    flex-shrink: 0;
+
+
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+
+
+    border-radius: 15px;
+
+
+
+    font-size: 28px;
+
+
+
+    background:
+
+        radial-gradient(
+
+            circle,
+
+            rgba(0, 210, 255, 0.18),
+
+            rgba(0, 80, 150, 0.08)
+
+        );
+
+
+
+    border: 1px solid rgba(0, 210, 255, 0.2);
+
+
+
+    box-shadow:
+
+        0 0 18px rgba(0, 190, 255, 0.1);
+
+}
+
+
+
+.nutrition-label {
+
+    display: block;
+
+
+
+    color: #61dcff;
+
+
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+
+
+    letter-spacing: 2px;
+
+}
+
+
+
+.nutrition-card h3 {
+
+    margin: 8px 0 7px;
+
+
+
+    color: #f4f8ff;
+
+
+
+    font-size: 18px;
+
+}
+
+
+
+.nutrition-card p {
+
+    margin: 0;
+
+
+
+    color: #91a8bd;
+
+
+
+    font-size: 13px;
+
+
+
+    line-height: 1.55;
+
+}
+
+
+
+
+
+/* =========================================
+
+   RECOMMENDED FOODS
+
+   ========================================= */
+
+
+
+.recommended-foods {
+
+    padding: 26px;
+
+
+
+    margin-bottom: 24px;
+
+
+
+    border-radius: 18px;
+
+
+
+    background:
+
+        linear-gradient(
+
+            145deg,
+
+            rgba(18, 20, 57, 0.9),
+
+            rgba(8, 18, 42, 0.94)
+
+        );
+
+
+
+    border: 1px solid rgba(150, 110, 255, 0.28);
+
+
+
+    box-shadow:
+
+        0 0 25px rgba(100, 70, 255, 0.08);
+
+}
+
+
+
+.section-title h2 {
+
+    margin: 6px 0 0;
+
+
+
+    color: #f3f7ff;
+
+
+
+    font-size: 22px;
+
+
+
+    letter-spacing: 1px;
+
+}
+
+
+
+.food-list {
+
+    display: grid;
+
+
+
+    gap: 10px;
+
+
+
+    margin-top: 20px;
+
+}
+
+
+
+.food-item {
+
+    display: flex;
+
+    align-items: center;
+
+
+
+    gap: 18px;
+
+
+
+    padding: 15px 17px;
+
+
+
+    border-radius: 12px;
+
+
+
+    background: rgba(255, 255, 255, 0.025);
+
+
+
+    border: 1px solid rgba(130, 160, 200, 0.08);
+
+
+
+    transition:
+
+        transform 0.25s ease,
+
+        background 0.25s ease,
+
+        border-color 0.25s ease;
+
+}
+
+
+
+.food-item:hover {
+
+    transform: translateX(6px);
+
+
+
+    background: rgba(0, 200, 255, 0.06);
+
+
+
+    border-color: rgba(0, 200, 255, 0.25);
+
+}
+
+
+
+.food-number {
+
+    min-width: 30px;
+
+
+
+    color: #65dcff;
+
+
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+
+
+    letter-spacing: 1px;
+
+}
+
+
+
+.food-item strong {
+
+    color: #eef6ff;
+
+
+
+    font-size: 14px;
+
+}
+
+
+
+.food-item p {
+
+    margin: 4px 0 0;
+
+
+
+    color: #8098ae;
+
+
+
+    font-size: 12px;
+
+}
+
+
+
+
+
+/* =========================================
+
+   KEY NUTRIENTS
+
+   ========================================= */
+
+
+
+.nutrient-focus {
+
+    display: flex;
+
+
+
+    justify-content: space-between;
+
+    align-items: center;
+
+
+
+    gap: 25px;
+
+
+
+    padding: 23px 25px;
+
+
+
+    margin-bottom: 20px;
+
+
+
+    border-radius: 16px;
+
+
+
+    background: rgba(9, 25, 52, 0.82);
+
+
+
+    border: 1px solid rgba(0, 210, 255, 0.2);
+
+}
+
+
+
+.nutrient-focus h2 {
+
+    margin: 6px 0 0;
+
+
+
+    color: #f3f7ff;
+
+
+
+    font-size: 20px;
+
+}
+
+
+
+.nutrient-tags {
+
+    display: flex;
+
+
+
+    flex-wrap: wrap;
+
+
+
+    justify-content: flex-end;
+
+
+
+    gap: 8px;
+
+}
+
+
+
+.nutrient-tags span {
+
+    padding: 8px 12px;
+
+
+
+    border-radius: 20px;
+
+
+
+    color: #83e6ff;
+
+
+
+    background: rgba(0, 200, 255, 0.07);
+
+
+
+    border: 1px solid rgba(0, 200, 255, 0.25);
+
+
+
+    font-size: 10px;
+
+
+
+    font-weight: bold;
+
+
+
+    letter-spacing: 1px;
+
+
+
+    transition:
+
+        background 0.25s ease,
+
+        box-shadow 0.25s ease;
+
+}
+
+
+
+.nutrient-tags span:hover {
+
+    background: rgba(0, 200, 255, 0.13);
+
+
+
+    box-shadow:
+
+        0 0 12px rgba(0, 200, 255, 0.15);
+
+}
+
+
+
+
+
+/* =========================================
+
+   SIMULATION NOTICE
+
+   ========================================= */
+
+
+
+.nutrition-note {
+
+    display: flex;
+
+
+
+    align-items: center;
+
+
+
+    gap: 13px;
+
+
+
+    padding: 15px 18px;
+
+
+
+    border-radius: 12px;
+
+
+
+    background: rgba(255, 165, 0, 0.045);
+
+
+
+    border: 1px solid rgba(255, 165, 0, 0.18);
+
+}
+
+
+
+.nutrition-note > span {
+
+    flex-shrink: 0;
+
+
+
+    color: #ffb347;
+
+
+
+    font-size: 20px;
+
+}
+
+
+
+.nutrition-note p {
+
+    margin: 0;
+
+
+
+    color: #bca57d;
+
+
+
+    font-size: 11px;
+
+
+
+    line-height: 1.5;
+
+}
+
+
+
+
+
+/* =========================================
+
+   RESPONSIVE
+
+   ========================================= */
+
+
+
+@media (max-width: 850px) {
+
+
+
+    #nutrition {
+
+        max-width: 100%;
+
+    }
+
+
+
+    .nutrition-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+    .nutrition-status-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+
+
+    .nutrient-focus {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+
+
+    .nutrient-tags {
+
+        justify-content: flex-start;
+
+    }
+
+}
+
+/* =========================================
+
+   ASTROGUARD MAIN LAYOUT FIX
+
+   ========================================= */
+
+
+
+.sidebar {
+
+    width: 225px;
+
+    left: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+
+.main {
+
+    margin-left: 225px !important;
+
+    width: calc(100% - 225px) !important;
+
+    min-height: 100vh;
+
+    padding: 32px 30px !important;
+
+    box-sizing: border-box;
+
+}
+
+
+
+.page {
+
+    width: 100%;
+
+    max-width: none !important;
+
+    margin-left: 0 !important;
+
+    margin-right: 0 !important;
+
+}
+
+
+
+/* Dashboard should use the available space */
+
+#dashboard {
+
+    width: 100%;
+
+    max-width: none !important;
+
+    margin-left: 0 !important;
+
+    margin-right: 0 !important;
+
+}
+
+
+
+/* =========================================
+
+   MISSION COMMS — FUTURISTIC INTERFACE
+
+\========================================= */
+
+
+
+#communication {
+
+    color: #e8f7ff;
+
+}
+
+
+
+#communication .page-header {
+
+    margin-bottom: 26px;
+
+}
+
+
+
+.comms-layout {
+
+    display: grid;
+
+    grid-template-columns: minmax(220px, 0.75fr) minmax(0, 2fr);
+
+    gap: 22px;
+
+    align-items: stretch;
+
+}
+
+
+
+.comms-status-panel,
+
+.comms-chat-panel {
+
+    min-width: 0;
+
+    border: 1px solid rgba(0, 220, 255, 0.28);
+
+    border-radius: 18px;
+
+    background:
+
+        linear-gradient(
+
+            145deg,
+
+            rgba(10, 35, 65, 0.96),
+
+            rgba(5, 15, 35, 0.96)
+
+        );
+
+    box-shadow:
+
+        0 0 25px rgba(0, 170, 255, 0.08),
+
+        inset 0 0 25px rgba(0, 150, 255, 0.025);
+
+    overflow: hidden;
+
+}
+
+
+
+.comms-status-panel {
+
+    padding: 22px;
+
+    align-self: start;
+
+}
+
+
+
+.comms-status-top {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-bottom: 28px;
+
+}
+
+
+
+.comms-radio-icon {
+
+    display: grid;
+
+    place-items: center;
+
+    width: 52px;
+
+    height: 52px;
+
+    flex-shrink: 0;
+
+    border: 1px solid rgba(0, 220, 255, 0.6);
+
+    border-radius: 14px;
+
+    color: #5cecff;
+
+    background: rgba(0, 190, 255, 0.1);
+
+    box-shadow: 0 0 20px rgba(0, 200, 255, 0.13);
+
+    font-size: 35px;
+
+}
+
+
+
+.comms-label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #68dff5;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.7px;
+
+}
+
+
+
+.comms-status-top h2,
+
+.comms-chat-header h2 {
+
+    margin: 0;
+
+    font-size: 17px;
+
+    color: #f0fbff;
+
+}
+
+
+
+.comms-status-row {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+    padding: 16px 0;
+
+    border-top: 1px solid rgba(100, 200, 255, 0.13);
+
+}
+
+
+
+.comms-status-row > span:first-child {
+
+    color: #86a9bf;
+
+    font-size: 10px;
+
+    letter-spacing: 1.3px;
+
+}
+
+
+
+.comms-status-row strong {
+
+    color: #e4f8ff;
+
+    font-size: 12px;
+
+    overflow-wrap: anywhere;
+
+}
+
+
+
+.comms-online {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #62ffc5;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+}
+
+
+
+.comms-dot {
+
+    width: 8px;
+
+    height: 8px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #62ffc5;
+
+    box-shadow: 0 0 12px #62ffc5;
+
+    animation: comms-blink 1.8s ease-in-out infinite;
+
+}
+
+
+
+.comms-disclaimer {
+
+    margin: 22px 0 0;
+
+    padding: 12px;
+
+    border: 1px solid rgba(0, 220, 255, 0.16);
+
+    border-radius: 8px;
+
+    background: rgba(0, 190, 255, 0.05);
+
+    color: #77b9ce;
+
+    font-size: 9px;
+
+    line-height: 1.7;
+
+    letter-spacing: 1px;
+
+    overflow-wrap: anywhere;
+
+}
+
+
+
+.comms-chat-panel {
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 590px;
+
+}
+
+
+
+.comms-chat-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 22px;
+
+    border-bottom: 1px solid rgba(0, 220, 255, 0.2);
+
+    background: rgba(0, 180, 255, 0.045);
+
+}
+
+
+
+.comms-channel-tag {
+
+    padding: 7px 10px;
+
+    border: 1px solid rgba(0, 220, 255, 0.3);
+
+    border-radius: 6px;
+
+    color: #76eaff;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+}
+
+
+
+.comms-messages {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 16px;
+
+    flex: 1;
+
+    min-height: 220px;
+
+    max-height: 440px;
+
+    overflow-y: auto;
+
+    padding: 22px;
+
+    background-image:
+
+        linear-gradient(rgba(30, 100, 150, 0.045) 1px, transparent 1px),
+
+        linear-gradient(90deg, rgba(30, 100, 150, 0.045) 1px, transparent 1px);
+
+    background-size: 24px 24px;
+
+}
+
+
+
+.comms-message {
+
+    max-width: 88%;
+
+    padding: 14px 16px;
+
+    border: 1px solid rgba(0, 220, 255, 0.22);
+
+    border-radius: 12px;
+
+    animation: comms-appear 0.25s ease-out;
+
+    overflow-wrap: anywhere;
+
+}
+
+
+
+.mission-message {
+
+    align-self: flex-start;
+
+    border-left: 3px solid #5cecff;
+
+    background: rgba(0, 160, 220, 0.09);
+
+}
+
+
+
+.astronaut-message {
+
+    align-self: flex-end;
+
+    border-right: 3px solid #bd8cff;
+
+    border-color: rgba(189, 140, 255, 0.32);
+
+    background: rgba(120, 65, 190, 0.13);
+
+}
+
+
+
+.comms-sender {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #6cecff;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+
+}
+
+
+
+.astronaut-message .comms-sender {
+
+    color: #d1adff;
+
+}
+
+
+
+.comms-message p {
+
+    margin: 0;
+
+    color: #e0f1ff;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    white-space: pre-wrap;
+
+}
+
+
+
+.comms-time {
+
+    display: block;
+
+    margin-top: 10px;
+
+    color: #7899b3;
+
+    font-size: 9px;
+
+    letter-spacing: 0.7px;
+
+}
+
+
+
+.comms-quick-actions {
+
+    padding: 18px 22px;
+
+    border-top: 1px solid rgba(0, 220, 255, 0.14);
+
+}
+
+
+
+.comms-quick-buttons {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+}
+
+
+
+.comms-quick-buttons button {
+
+    padding: 9px 12px;
+
+    border: 1px solid rgba(0, 220, 255, 0.32);
+
+    border-radius: 8px;
+
+    background: rgba(0, 180, 255, 0.07);
+
+    color: #a8efff;
+
+    font-size: 11px;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+
+}
+
+
+
+.comms-quick-buttons button:hover {
+
+    border-color: #65edff;
+
+    background: rgba(0, 200, 255, 0.17);
+
+    box-shadow: 0 0 14px rgba(0, 200, 255, 0.13);
+
+    transform: translateY(-2px);
+
+}
+
+
+
+.comms-compose {
+
+    padding: 20px 22px;
+
+    border-top: 1px solid rgba(0, 220, 255, 0.2);
+
+    background: rgba(2, 12, 28, 0.65);
+
+}
+
+
+
+.comms-compose label {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #68dff5;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+
+.comms-input-row {
+
+    display: flex;
+
+    gap: 10px;
+
+    min-width: 0;
+
+}
+
+
+
+.comms-input-row input {
+
+    width: 100%;
+
+    min-width: 0;
+
+    padding: 13px;
+
+    border: 1px solid rgba(0, 220, 255, 0.3);
+
+    border-radius: 9px;
+
+    outline: none;
+
+    background: #081a2c;
+
+    color: #e8faff;
+
+    font: inherit;
+
+    font-size: 13px;
+
+}
+
+
+
+.comms-input-row input:focus {
+
+    border-color: #5cecff;
+
+    box-shadow: 0 0 15px rgba(0, 200, 255, 0.12);
+
+}
+
+
+
+.comms-input-row input::placeholder {
+
+    color: #66849a;
+
+}
+
+
+
+.comms-input-row button {
+
+    flex-shrink: 0;
+
+    padding: 12px 15px;
+
+    border: 1px solid #45dff5;
+
+    border-radius: 9px;
+
+    background: linear-gradient(135deg, #087fba, #1554a0);
+
+    color: white;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.6px;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+
+}
+
+
+
+.comms-input-row button:hover {
+
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.3);
+
+    transform: translateY(-2px);
+
+}
+
+
+
+#comms-feedback {
+
+    margin: 10px 0 0;
+
+    color: #80a9c1;
+
+    font-size: 10px;
+
+    line-height: 1.6;
+
+}
+
+
+
+.comms-footer {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 16px;
+
+    color: #729bb4;
+
+    font-size: 9px;
+
+    letter-spacing: 1.1px;
+
+}
+
+
+
+@keyframes comms-blink {
+
+    50% { opacity: 0.35; }
+
+}
+
+
+
+@keyframes comms-appear {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(5px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+
+@media (max-width: 850px) {
+
+    .comms-layout {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+    .comms-chat-panel {
+
+        min-height: 520px;
+
+    }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+    .comms-chat-header,
+
+    .comms-messages,
+
+    .comms-quick-actions,
+
+    .comms-compose {
+
+        padding: 15px;
+
+    }
+
+
+
+    .comms-input-row {
+
+        flex-direction: column;
+
+    }
+
+
+
+    .comms-input-row button {
+
+        min-height: 42px;
+
+    }
+
+
+
+    .comms-message {
+
+        max-width: 96%;
+
+    }
+
+}
+
+
+
+/* =========================================
+
+   ASTROGUARD — HEALTH INDICATOR COLOURS
+
+\========================================= */
+
+
+
+.indicator-status {
+
+    display: inline-block;
+
+    width: fit-content;
+
+    padding: 5px 12px;
+
+    margin-top: 8px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+}
+
+
+
+.indicator-status.normal {
+
+    color: #86efac;
+
+    background: rgba(34, 197, 94, 0.15);
+
+    border: 1px solid #22c55e;
+
+}
+
+
+
+.indicator-status.warning {
+
+    color: #fde047;
+
+    background: rgba(234, 179, 8, 0.15);
+
+    border: 1px solid #eab308;
+
+}
+
+
+
+.indicator-status.critical {
+
+    color: #fca5a5;
+
+    background: rgba(239, 68, 68, 0.15);
+
+    border: 1px solid #ef4444;
+
+}
+
+/* =====================================
+
+   ASTROGUARD - MOBILE RESPONSIVE DESIGN
+
+   ===================================== */
+
+
+
+@media screen and (max-width: 700px) {
+
+
+
+    /* PAGE WIDTH */
+
+    html,
+
+    body {
+
+        width: 100%;
+
+        overflow-x: hidden;
+
+    }
+
+
+
+    /* MOBILE HEADER */
+
+    .sidebar {
+
+        position: relative !important;
+
+        top: 0;
+
+        left: 0;
+
+        width: 100% !important;
+
+        height: auto !important;
+
+        padding: 18px 15px 10px !important;
+
+        margin: 0;
+
+        background: rgba(8, 16, 34, 0.97);
+
+        border-right: none;
+
+        border-bottom: 1px solid #263753;
+
+    }
+
+
+
+    .logo {
+
+        font-size: 23px;
+
+        letter-spacing: 2px;
+
+        margin: 0;
+
+    }
+
+
+
+    .subtitle {
+
+        font-size: 10px;
+
+        margin: 4px 0 14px;
+
+    }
+
+
+
+    /* HORIZONTAL NAVIGATION */
+
+    nav {
+
+        display: flex !important;
+
+        flex-direction: row !important;
+
+        flex-wrap: nowrap !important;
+
+        justify-content: flex-start;
+
+        align-items: center;
+
+        gap: 9px;
+
+        width: 100%;
+
+        overflow-x: auto;
+
+        overflow-y: hidden;
+
+        padding: 3px 0 10px;
+
+        scrollbar-width: thin;
+
+        scrollbar-color: #28506d transparent;
+
+    }
+
+
+
+    .nav-button {
+
+        flex: 0 0 auto;
+
+        width: auto;
+
+        min-height: 42px;
+
+        padding: 11px 15px;
+
+        white-space: nowrap;
+
+        font-size: 12px;
+
+        border: 1px solid #263753;
+
+        border-radius: 20px;
+
+        background: rgba(20, 36, 58, 0.85);
+
+    }
+
+
+
+    .nav-button.active {
+
+        background: rgba(14, 116, 144, 0.3);
+
+        border-color: #38bdf8;
+
+        color: #7dd3fc;
+
+    }
+
+
+
+    /* MAIN CONTENT */
+
+    .main {
+
+        width: 100% !important;
+
+        margin-left: 0 !important;
+
+        padding: 20px 14px !important;
+
+        min-width: 0;
+
+        box-sizing: border-box;
+
+    }
+
+
+
+    .page {
+
+        width: 100%;
+
+        min-width: 0;
+
+    }
+
+
+
+    h1 {
+
+        font-size: 25px;
+
+        line-height: 1.3;
+
+    }
+
+
+
+    h2 {
+
+        font-size: 19px;
+
+    }
+
+
+
+    /* HEALTH OVERVIEW */
+
+    .cards {
+
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+        gap: 10px;
+
+    }
+
+
+
+    .metric {
+
+        min-width: 0;
+
+        padding: 14px;
+
+    }
+
+
+
+    .metric strong {
+
+        font-size: 23px;
+
+    }
+
+
+
+    /* MISSION PANELS */
+
+    .mission-card,
+
+    .panel,
+
+    .emergency {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        padding: 17px;
+
+        box-sizing: border-box;
+
+    }
+
+
+
+    #dashboard .mission-details {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+    /* CHARTS */
+
+    canvas {
+
+        max-width: 100% !important;
+
+    }
+
+
+
+    /* FORMS */
+
+    form {
+
+        width: 100%;
+
+        max-width: 100%;
+
+    }
+
+
+
+    input,
+
+    select,
+
+    textarea {
+
+        max-width: 100%;
+
+        box-sizing: border-box;
+
+    }
+
+
+
+    /* TABLES */
+
+    .table-scroll {
+
+        max-width: 100%;
+
+        overflow-x: auto;
+
+    }
+
+
+
+    /* NUTRITION */
+
+    .nutrition-grid {
+
+        grid-template-columns: 1fr !important;
+
+    }
+
+
+
+    .nutrition-status-header,
+
+    .nutrient-focus {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+
+
+    .nutrient-tags {
+
+        justify-content: flex-start;
+
+    }
+
+
+
+    /* WARNING PROCEDURE */
+
+    .warning-actions {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+    /* MISSION COMMUNICATION */
+
+    .comms-layout {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+    .comms-chat-panel {
+
+        min-height: 520px;
+
+    }
+
+
+
+    .comms-input-row {
+
+        flex-direction: column;
+
+    }
+
+
+
+    .comms-input-row button {
+
+        min-height: 42px;
+
+    }
+
+
+
+    /* IMAGES AND VIDEOS */
+
+    img,
+
+    video {
+
+        max-width: 100%;
+
+        height: auto;
+
+    }
+
+}
+
+
+
+/* VERY SMALL PHONES */
+
+@media screen and (max-width: 380px) {
+
+
+
+    .cards {
+
+        grid-template-columns: 1fr !important;
+
+    }
+
+
+
+    .main {
+
+        padding: 18px 10px !important;
+
+    }
+
+
+
+    h1 {
+
+        font-size: 22px;
+
+    }
+
+}
+
+
+
+/* ===== CREW MENTAL HEALTH ===== */
+
+
+
+#mentalhealth {
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+}
+
+
+
+.mental-health-intro {
+
+    padding: 25px;
+
+    margin: 25px 0;
+
+    border: 1px solid rgba(56, 189, 248, 0.4);
+
+    border-radius: 16px;
+
+    background: linear-gradient(
+
+        135deg,
+
+        rgba(12, 42, 75, 0.9),
+
+        rgba(15, 20, 55, 0.9)
+
+    );
+
+    box-shadow: 0 0 22px rgba(56, 189, 248, 0.1);
+
+}
+
+
+
+.mental-label {
+
+    color: #38bdf8;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    font-weight: bold;
+
+}
+
+
+
+.mental-health-intro h2 {
+
+    color: #e0f2fe;
+
+    margin: 12px 0;
+
+}
+
+
+
+.mental-health-intro p {
+
+    color: #a9b7ca;
+
+    line-height: 1.7;
+
+}
+
+
+
+.mental-health-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+
+    margin: 20px 0 30px;
+
+}
+
+
+
+.mental-health-card {
+
+    padding: 22px;
+
+    min-width: 0;
+
+    border: 1px solid rgba(56, 189, 248, 0.25);
+
+    border-radius: 15px;
+
+    background: rgba(10, 25, 55, 0.8);
+
+    transition: 0.3s ease;
+
+}
+
+
+
+.mental-health-card:hover {
+
+    transform: translateY(-5px);
+
+    border-color: #38bdf8;
+
+    box-shadow: 0 0 18px rgba(56, 189, 248, 0.2);
+
+}
+
+
+
+.mental-icon {
+
+    font-size: 27px;
+
+}
+
+
+
+.mental-health-card h3 {
+
+    color: #7dd3fc;
+
+    margin: 12px 0 8px;
+
+}
+
+
+
+.mental-health-card p {
+
+    color: #a9b7ca;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    margin: 0;
+
+}
+
+
+
+.mental-warning-panel {
+
+    padding: 23px;
+
+    margin: 20px 0 30px;
+
+    border: 1px solid rgba(245, 158, 11, 0.5);
+
+    border-radius: 15px;
+
+    background: rgba(65, 42, 12, 0.45);
+
+}
+
+
+
+.mental-warning-panel h3 {
+
+    color: #fbbf24;
+
+    margin-top: 0;
+
+}
+
+
+
+.mental-warning-panel li {
+
+    color: #e6edf7;
+
+    margin: 12px 0;
+
+    line-height: 1.5;
+
+}
+
+
+
+.mental-warning-panel p {
+
+    color: #fcd9a0;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    margin-bottom: 0;
+
+}
+
+
+
+.mental-health-note {
+
+    padding: 18px 20px;
+
+    border: 1px solid rgba(56, 189, 248, 0.25);
+
+    border-radius: 12px;
+
+    background: rgba(8, 25, 45, 0.8);
+
+    margin: 25px 0;
+
+}
+
+
+
+.mental-health-note strong {
+
+    color: #38bdf8;
+
+    letter-spacing: 1px;
+
+}
+
+
+
+.mental-health-note p {
+
+    color: #a9b7ca;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    margin-bottom: 0;
+
+}
+
+
+
+@media (max-width: 700px) {
+
+    .mental-health-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+    .mental-health-intro,
+
+    .mental-health-card,
+
+    .mental-warning-panel {
+
+        padding: 17px;
+
+    }
+
+}
+
+
+/* ==========================================
+   ASTROGUARD — CLEAN EDITORIAL WEBSITE REDESIGN
+   Stage 1: global layout, navigation and home
+   ========================================== */
+:root {
+  --ag-ink: #17283b;
+  --ag-muted: #637487;
+  --ag-blue: #527c9f;
+  --ag-blue-dark: #244966;
+  --ag-line: #dce4eb;
+  --ag-paper: #ffffff;
+  --ag-soft: #f4f7f9;
+}
+html { scroll-behavior: smooth; }
+body {
+  margin: 0 !important;
+  background: #f7f9fb !important;
+  color: var(--ag-ink) !important;
+  font-family: Inter, "Segoe UI", Arial, sans-serif !important;
+  line-height: 1.65;
+}
+body::after { display: none !important; }
+.space-planets { display: none !important; }
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  width: 100%;
+  min-height: 78px;
+  padding: 0 clamp(22px, 6vw, 88px);
+  background: rgba(255,255,255,.96);
+  border-bottom: 1px solid var(--ag-line);
+  box-shadow: 0 3px 18px rgba(23,40,59,.04);
+  backdrop-filter: blur(12px);
+}
+.brand { display:flex; align-items:center; gap:11px; color:var(--ag-ink); text-decoration:none; white-space:nowrap; }
+.brand-mark { display:grid; place-items:center; width:34px; height:34px; border:1px solid #8ca8bd; border-radius:50%; color:var(--ag-blue-dark); font-family:Georgia,serif; font-size:20px; }
+.brand-name { font-size:18px; font-weight:700; letter-spacing:2.2px; }
+.site-nav { display:flex; align-items:center; justify-content:flex-end; flex-wrap:wrap; gap:5px; }
+.site-nav .nav-button {
+  width:auto !important; margin:0 !important; padding:10px 12px !important;
+  border:0 !important; border-radius:4px !important; background:transparent !important;
+  color:#526477 !important; font-size:13px !important; font-weight:600;
+  text-align:center !important; box-shadow:none !important; transform:none !important;
+  transition:color .2s ease, background .2s ease !important;
+}
+.site-nav .nav-button:hover, .site-nav .nav-button.active { color:var(--ag-blue-dark) !important; background:#edf3f7 !important; box-shadow:none !important; }
+.main {
+  width:100% !important; max-width:1440px; min-height:calc(100vh - 78px);
+  margin:0 auto !important; padding:0 clamp(22px, 6vw, 88px) 80px !important;
+  background:transparent !important; position:relative; z-index:1;
+}
+.page { color:var(--ag-ink); }
+.page h1, .page h2, .page h3 { color:var(--ag-ink) !important; font-family:Georgia, "Times New Roman", serif; letter-spacing:-.025em; }
+.page h1 { font-size:clamp(34px,5vw,62px); line-height:1.08; font-weight:500; }
+.page h2 { font-size:clamp(24px,3vw,34px); line-height:1.2; font-weight:500; }
+.page h3 { font-size:21px; font-weight:600; }
+.page p, .page li { color:var(--ag-muted); }
+.eyebrow { color:var(--ag-blue) !important; font-size:11px !important; font-weight:700; letter-spacing:2.2px !important; }
+.muted { color:var(--ag-muted) !important; }
+.home-hero {
+  position:relative; display:grid; grid-template-columns:minmax(0,1.05fr) minmax(280px,.95fr);
+  align-items:center; gap:34px; min-height:480px; margin:0 calc(clamp(22px, 6vw, 88px) * -1) 72px;
+  padding:68px clamp(22px, 8vw, 112px); overflow:hidden; background:#eaf0f4;
+}
+.hero-copy { position:relative; z-index:2; max-width:640px; }
+.hero-copy h1 { max-width:660px; margin:12px 0 20px; color:#17283b !important; }
+.hero-description { max-width:570px; font-size:17px; line-height:1.8; color:#526477 !important; }
+.hero-link { display:inline-flex !important; align-items:center; gap:14px; width:auto !important; margin-top:18px !important; padding:13px 20px !important; border:1px solid var(--ag-blue-dark) !important; border-radius:3px !important; background:var(--ag-blue-dark) !important; color:white !important; font-size:13px !important; font-weight:600; box-shadow:none !important; transform:none !important; }
+.hero-link:hover { background:#18384f !important; }
+.hero-art { position:relative; min-height:320px; display:grid; place-items:center; }
+.hero-earth { position:relative; z-index:1; width:min(290px,72vw); aspect-ratio:1; border-radius:50%; background:radial-gradient(circle at 32% 28%,#dbe8ef 0 5%,#7fa7bd 23%,#315f7c 49%,#17354e 70%,#0d2034 100%); box-shadow:inset -24px -20px 45px rgba(4,20,35,.5),0 20px 65px rgba(28,67,94,.22); }
+.hero-earth::before { content:""; position:absolute; inset:15% 5% 35% 0; border-radius:50%; background:linear-gradient(145deg,transparent 20%,rgba(211,228,235,.55) 22%,transparent 43%,rgba(220,235,239,.35) 48%,transparent 66%); transform:rotate(-24deg); filter:blur(2px); }
+.hero-earth::after { content:""; position:absolute; left:-18%; right:-18%; bottom:12%; height:28%; border-top:2px solid rgba(211,237,247,.75); border-radius:50%; filter:drop-shadow(0 0 8px rgba(102,167,199,.65)); }
+.hero-orbit { position:absolute; width:390px; height:145px; border:1px solid rgba(77,117,145,.35); border-radius:50%; transform:rotate(-25deg); }
+.orbit-two { width:440px; height:190px; transform:rotate(24deg); border-color:rgba(77,117,145,.2); }
+.intro-section { max-width:1120px; margin:0 auto 70px; }
+.intro-section > h2 { max-width:720px; margin:10px 0 14px; }
+.section-intro { max-width:720px; font-size:16px; line-height:1.8; }
+.topic-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; margin-top:30px; }
+.topic-card {
+  display:flex !important; flex-direction:column; align-items:flex-start; min-height:205px; width:100% !important;
+  padding:25px !important; border:1px solid var(--ag-line) !important; border-radius:5px !important;
+  background:#fff !important; color:var(--ag-ink) !important; text-align:left !important;
+  box-shadow:0 8px 24px rgba(23,40,59,.035) !important; transform:none !important;
+}
+.topic-card:hover { border-color:#9db5c7 !important; background:#fbfdfe !important; box-shadow:0 12px 28px rgba(23,40,59,.08) !important; }
+.topic-number { color:var(--ag-blue) !important; font-size:11px; letter-spacing:1.5px; }
+.topic-card strong { margin:18px 0 7px; color:var(--ag-ink); font-family:Georgia,serif; font-size:23px; font-weight:500; }
+.topic-card > span:not(.topic-number) { color:var(--ag-muted); font-size:14px; line-height:1.6; }
+.topic-card em { margin-top:auto; padding-top:20px; color:var(--ag-blue-dark); font-size:12px; font-style:normal; font-weight:700; }
+.tools-strip { display:grid; grid-template-columns:.8fr 1.2fr; align-items:center; gap:24px; padding:28px 0; border-top:1px solid var(--ag-line); border-bottom:1px solid var(--ag-line); }
+.tools-strip h2 { margin:5px 0 0; font-size:25px; }
+.tools-links { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:8px; }
+.tools-links .nav-button { width:auto !important; padding:9px 12px !important; border:1px solid var(--ag-line) !important; border-radius:3px !important; background:white !important; color:#526477 !important; box-shadow:none !important; transform:none !important; font-size:12px; }
+.tools-links .nav-button:hover { border-color:#9db5c7 !important; color:var(--ag-blue-dark) !important; }
+.legacy-dashboard-heading { margin-top:62px; padding-top:24px; border-top:1px solid var(--ag-line); }
+.legacy-dashboard-heading h2 { margin:4px 0 8px; }
+/* Neutralise the old neon panels while retaining their IDs and interactive controls. */
+.panel, .mission-status, .mission-card, .metric, .nutrition-status, .mental-health-intro, .mental-health-card, .mental-warning-panel, .comms-panel {
+  background:#fff !important; border:1px solid var(--ag-line) !important; border-radius:5px !important; box-shadow:0 8px 24px rgba(23,40,59,.035) !important; color:var(--ag-ink) !important;
+}
+.panel p, .metric p, .mission-info p, .mental-health-card p { color:var(--ag-muted) !important; }
+.metric strong, .mission-card strong, .logo { color:var(--ag-blue-dark) !important; text-shadow:none !important; }
+.metric span, .status-label, .mission-info .status-label { color:var(--ag-muted) !important; }
+.primary-button, .secondary-button { border-radius:3px !important; box-shadow:none !important; }
+input, select, textarea { border-color:#cbd6df !important; background:#fff !important; color:var(--ag-ink) !important; }
+.page .hidden { display:none !important; }
+@media (max-width: 1050px) {
+  .site-header { align-items:flex-start; flex-direction:column; gap:8px; padding-top:16px; padding-bottom:12px; }
+  .site-nav { justify-content:flex-start; }
+  .home-hero { min-height:420px; }
+}
+@media (max-width: 760px) {
+  .site-header { position:relative; }
+  .site-nav { width:100%; display:flex; overflow-x:auto; flex-wrap:nowrap; justify-content:flex-start; padding-bottom:4px; }
+  .site-nav .nav-button { flex:0 0 auto; white-space:nowrap; }
+  .main { padding-left:18px !important; padding-right:18px !important; }
+  .home-hero { grid-template-columns:1fr; gap:8px; min-height:0; margin-bottom:48px; padding:48px 22px 30px; }
+  .hero-art { min-height:230px; }
+  .hero-earth { width:205px; }
+  .hero-orbit { width:290px; height:110px; }
+  .orbit-two { width:320px; height:140px; }
+  .topic-grid { grid-template-columns:1fr; }
+  .tools-strip { grid-template-columns:1fr; }
+  .tools-links { justify-content:flex-start; }
+  .cards { grid-template-columns:repeat(2,minmax(0,1fr)) !important; }
+}
+@media (max-width: 420px) {
+  .brand-name { font-size:16px; }
+  .cards { grid-template-columns:1fr !important; }
+  .hero-copy h1 { font-size:36px !important; }
+}
+ /* ASTROGUARD — CAPSULE NAVIGATION */
+
+.site-nav {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 9px;
+    padding: 12px 20px;
+}
+
+.site-nav .nav-button {
+    width: auto !important;
+    min-height: 42px;
+    padding: 11px 17px !important;
+
+    background: #1b2932 !important;
+    border: 1px solid #344956 !important;
+    border-radius: 50px !important;
+
+    color: #aebfca !important;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.site-nav .nav-button:hover {
+    background: #263c49 !important;
+    border-color: #48bfe5 !important;
+    color: #ffffff !important;
+}
+
+.site-nav .nav-button.active {
+    background: #087e99 !important;
+    border: 1px solid #48c5e8 !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 12px rgba(54, 184, 232, 0.18);
+}
+
+@media (max-width: 700px) {
+    .site-nav {
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .site-nav .nav-button {
+        font-size: 11px;
+        padding: 9px 12px !important;
+    }
+}

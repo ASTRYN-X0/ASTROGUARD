@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASTROGUARD | Human Health Beyond Earth</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#" aria-label="ASTROGUARD home">
+            <span class="brand-mark">A</span>
+            <span class="brand-name">ASTROGUARD</span>
+        </a>
+        
+<nav class="site-nav" aria-label="Main navigation">
+
+    <button class="nav-button active" data-page="dashboard">
+        Dashboard
+    </button>
+
+    <button class="nav-button" data-page="assessment">
+        Health Assessment
+    </button>
+
+    <button class="nav-button" data-page="health">
+        Health Monitoring
+    </button>
+
+    <button class="nav-button" data-page="nutrition">
+        Health Recommendations
+    </button>
+
+    <button class="nav-button" data-page="alerts">
+        Health Reports
+    </button>
+
+</nav>
+
+    </header>
+
+    <main class="main">
+
+    <!-- SPACE NUTRITION PAGE -->
+    <section id="nutrition" class="page hidden">
+
+        <div class="page-header">
+            <p class="eyebrow">MISSION CONTROL / CREW WELLNESS</p>
+            <h1>SPACE NUTRITION</h1>
+            <p class="muted">Nutrition support for long-duration space missions</p>
+        </div>
+
+        <div class="nutrition-status">
+            <div class="nutrition-status-header">
+                <div>
+                    <span class="status-label">DAILY NUTRITION STATUS</span>
+                    <h2>CREW MEMBER 01</h2>
+                </div>
+
+                <span class="nutrition-badge">OPTIMAL</span>
+            </div>
+
+            <p class="nutrition-description">
+                Recommended nutrition is based on the astronaut's
+                simulated health readings and mission activity.
+            </p>
+        </div>
+
+        <!-- RECOMMENDED FOODS -->
+        <div class="panel">
+            <h2>Recommended Foods</h2>
+
+            <div class="food-grid">
+
+                <div class="food-card">
+                    <span class="food-icon">🥛</span>
+                    <h3>Calcium-Rich Foods</h3>
+                    <p>Supports bone health during long periods in microgravity.</p>
+                </div>
+
+                <div class="food-card">
+                    <span class="food-icon">🥬</span>
+                    <h3>Vegetables</h3>
+                    <p>Provides vitamins, minerals and dietary fibre.</p>
+                </div>
+
+                <div class="food-card">
+                    <span class="food-icon">🐟</span>
+                    <h3>Protein</h3>
+                    <p>Helps maintain muscle mass and support recovery.</p>
+                </div>
+
+                <div class="food-card">
+                    <span class="food-icon">🥜</span>
+                    <h3>Healthy Fats</h3>
+                    <p>Provides energy and essential fatty acids.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- DAILY MEAL PLAN -->
+        <div class="panel">
+            <h2>Suggested Daily Meal Plan</h2>
+
+            <div class="meal-plan">
+
+                <div class="meal">
+                    <span>BREAKFAST</span>
+                    <strong>Oatmeal + fruit + milk</strong>
+                </div>
+
+                <div class="meal">
+                    <span>LUNCH</span>
+                    <strong>Chicken + vegetables + rice</strong>
+                </div>
+
+                <div class="meal">
+                    <span>SNACK</span>
+                    <strong>Nuts + dried fruit</strong>
+                </div>
+
+                <div class="meal">
+                    <span>DINNER</span>
+                    <strong>Fish + vegetables + whole grains</strong>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="nutrition-note">
+            <span>ⓘ</span>
+            <p>
+                Simulation only. Nutrition recommendations are general
+                educational suggestions and do not replace mission-specific
+                medical guidance.
+            </p>
+        </div>
+
+    </section>
+        <section id="dashboard" class="page home-page">
+            <section class="home-hero">
+                <div class="hero-copy">
+                    <p class="eyebrow">HUMAN HEALTH BEYOND EARTH</p>
+                    <h1>The human body was made for Earth. What happens in space?</h1>
+                    <p class="hero-description">Explore how spaceflight affects the human body, the challenges astronauts face, and the science that helps keep crews healthy.</p>
+
+                </div>
+                <div class="hero-art" role="img" aria-label="Illustration of Earth viewed from space">
+                    <div class="hero-orbit orbit-one"></div>
+                    <div class="hero-orbit orbit-two"></div>
+                    <div class="hero-earth"></div>
+                </div>
+            </section>
+
+            <section class="intro-section">
+                <p class="eyebrow">DISCOVER THE SCIENCE</p>
+                <h2>Life in space changes the way the body works.</h2>
+                <p class="section-intro">Without Earth's familiar gravity and environment, astronauts experience changes that researchers study to support safer human space exploration.</p>
+                <div class="topic-grid">
+                    <button class="topic-card nav-button" data-page="assessment"><span class="topic-number">01</span><strong>Physical Health</strong><span>Bones, muscles and the cardiovascular system</span><em>Explore topic →</em></button>
+                    <button class="topic-card nav-button" data-page="mentalhealth"><span class="topic-number">02</span><strong>Mental Wellbeing</strong><span>Sleep, stress, isolation and crew connection</span><em>Explore topic →</em></button>
+                    <button class="topic-card nav-button" data-page="nutrition"><span class="topic-number">03</span><strong>Nutrition</strong><span>Food, hydration and healthy routines</span><em>Explore topic →</em></button>
+                </div>
+            </section>
+            
+
+            <section class="tools-strip" aria-label="ASTROGUARD interactive tools">
+                <div><p class="eyebrow">EXPLORE ASTROGUARD</p><h2>Tools for crew health awareness</h2></div>
+                <div class="tools-links">
+                    <button class="nav-button" data-page="health">Health records</button>
+                    <button class="nav-button" data-page="trends">Health trends</button>
+                    <button class="nav-button" data-page="routine">Daily routine</button>
+                    <button class="nav-button" data-page="checkin">Daily check-in</button>
+                    <button class="nav-button" data-page="alerts">Alerts</button>
+                </div>
+            </section>
+
+            <div class="legacy-dashboard-heading">
+                <p class="eyebrow">INTERACTIVE DEMONSTRATION</p>
+                <h2>Crew Health Snapshot</h2>
+                <p class="muted">Example readings from the ASTROGUARD demonstration.</p>
+            </div>
+            <div class="planet-illustration">
+    <div class="planet"></div>
+</div>
+
+            <div class="mission-card">
+                <span>MISSION DAY</span>
+                <strong>30</strong>
+                <p>ASTRYN-X0 · CREW MEMBER 01</p>
+            </div>
+
+<!-- Mission Status Panel -->
+<div class="mission-status">
+    <div class="status-header">
+        <h2>MISSION STATUS</h2>
+        <span class="online-indicator">
+            <span class="status-dot"></span>
+            SYSTEM ONLINE
+        </span>
+    </div>
+
+    <div class="mission-details">
+        <div class="mission-info">
+            <span class="status-label">ASTRONAUT</span>
+            <strong>CREW MEMBER 01</strong>
+            <p>ASTRYN-X0</p>
+        </div>
+        
+
+        <div class="mission-info">
+            <span class="status-label">MISSION DAY</span>
+            <strong>30</strong>
+            <p>Mission in progress</p>
+        </div>
+
+        <div class="mission-info">
+            <span class="status-label">SPACECRAFT</span>
+            <strong>ASTRYN-X0</strong>
+            <p>Flight systems active</p>
+        </div>
+         </div>
+         <div class="crew-health-status">
+    <span class="status-label">CREW HEALTH STATUS</span>
+    <span id="crew-status" class="health-status normal">
+        NORMAL
+    </span>
+</div>
+        <div class="radar-panel">
+    <h3>CREW LOCATION RADAR</h3>
+    <div class="radar">
+        <div class="radar-sweep"></div>
+        <div class="radar-ring ring-one"></div>
+        <div class="radar-ring ring-two"></div>
+        <div class="radar-ring ring-three"></div>
+        <div class="radar-center"></div>
+        <span class="radar-dot"></span>
+    </div>
+    <p class="radar-status">SIGNAL ACTIVE</p>
+</div>
+    </div>
+</div>
+
+<h2>Health Overview</h2>
+            <div class="cards">
+                <article class="metric">
+                    <span>♡ HEART RATE</span>
+                    <strong><span id="heart-rate">84</span> <small>bpm</small></strong>
+                    <p>Simulated reading</p>
+                    <p id="heart-status" class="indicator-status normal">
+    NORMAL
+</p>
+                </article>
+                <article class="metric">
+                    <span>◉ OXYGEN (SpO₂)</span>
+                    <strong><span id="oxygen">96</span> <small>%</small></strong>
+                    <p>Simulated reading</p>
+                    <p id="oxygen-status" class="indicator-status normal">
+    NORMAL
+</p>
+                </article>
+                <article class="metric">
+                    <span>♨ TEMPERATURE</span>
+                    <strong><span id="temperature">37.0</span> <small>°C</small></strong>
+                    <p>Simulated reading</p>
+                    <p id="temperature-status" class="indicator-status normal">
+    NORMAL
+</p>
+                </article>
+                <article class="metric">
+                    <span>☾ SLEEP</span>
+                    <strong>5.5 <small>hrs</small></strong>
+                    <p>Last sleep period</p>
+                </article>
+                <article class="metric">
+                    <span>↗ EXERCISE</span>
+                    <strong>30 <small>min</small></strong>
+                    <p>Today's activity</p>
+                </article>
+            </div>
+
+            <button id="update-health" class="primary-button">Update Health Data</button>
+
+            <div id="health-alert" class="alert normal">
+                All health measurements are within the demo limits.
+            </div>
+            
+<div id="warning-procedure" class="warning-procedure hidden">
+    <div class="warning-heading">
+        <span class="warning-icon">⚠</span>
+        <div>
+            <h2>ASTRONAUT HEALTH WARNING</h2>
+            <p>Abnormal simulated health readings detected</p>
+        </div>
+    </div>
+
+    <h3>RECOMMENDED ACTIONS</h3>
+
+    <div class="warning-actions">
+        <div class="warning-action">
+            <span class="action-number">01</span>
+            <div>
+                <strong>Stop strenuous activities</strong>
+                <p>Pause exercise and physically demanding tasks.</p>
+            </div>
+        </div>
+
+        <div class="warning-action">
+            <span class="action-number">02</span>
+            <div>
+                <strong>Rest and hydrate</strong>
+                <p>Rest in a safe area and drink water if appropriate.</p>
+            </div>
+        </div>
+
+        <div class="warning-action">
+            <span class="action-number">03</span>
+            <div>
+                <strong>Recheck vital signs</strong>
+                <p>Check heart rate, oxygen level, and temperature again.</p>
+            </div>
+        </div>
+
+        <div class="warning-action">
+            <span class="action-number">04</span>
+            <div>
+                <strong>Notify Mission Control</strong>
+                <p>Report the readings and any unusual symptoms.</p>
+            </div>
+        </div>
+
+        <div class="warning-action">
+            <span class="action-number">05</span>
+            <div>
+                <strong>Follow medical instructions</strong>
+                <p>Follow guidance from the mission medical team.</p>
+            </div>
+        </div>
+    </div>
+
+    <p class="warning-note">
+        Simulation only — follow mission-specific medical procedures.
+    </p>
+</div>
+
+            <div id="emergency-alert" class="emergency hidden">
+                <h2>🚨 EMERGENCY EVACUATION</h2>
+                <p>Critical simulated heart rate detected.</p>
+                <h3>Emergency procedure</h3>
+                <ol>
+                    <li>Notify Mission Control.</li>
+                    <li>Check the astronaut's condition.</li>
+                    <li>Prepare the designated evacuation plan.</li>
+                    <li>Follow mission-specific instructions.</li>
+                </ol>
+                <p class="demo-note">Simulation only — no actual evacuation is initiated.</p>
+            </div>
+            <button id="clear-alerts" class="secondary-button">Acknowledge and Clear Alerts</button>
+
+            <div class="panel">
+                <h2>Heart Rate Trends</h2>
+                <canvas id="heartChart"></canvas>
+                <div class="heartbeat-animation">
+    <svg viewBox="0 0 300 60"
+         preserveAspectRatio="none">
+        <polyline
+            class="heartbeat-line"
+            points="0,30 60,30 75,30 85,10 98,50 112,20 125,30 180,30 195,30 205,10 218,50 232,20 245,30 300,30"
+        />
+    </svg>
+</div>
+            </div>
+        </section>
+
+        <section id="health" class="page hidden">
+            <p class="eyebrow">MISSION CONTROL / DATA</p>
+            <h1>Health Data</h1>
+            <p class="muted">Latest simulated crew measurements</p>
+            <div class="panel">
+                <h2>Health History</h2>
+                <div class="table-scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Heart Rate</th>
+                                <th>Oxygen</th>
+                                <th>Temperature</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="health-history-body"></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        
+<!-- HEALTH ASSESSMENT PAGE -->
+<section id="assessment" class="page hidden">
+
+    <div class="page-header">
+        <p class="eyebrow">MISSION CONTROL / MEDICAL SYSTEM</p>
+        <h1>HEALTH ASSESSMENT</h1>
+        <p class="muted">
+            Astronaut health monitoring and educational guidance
+        </p>
+    </div>
+
+
+    
+<!-- INTERACTIVE HUMAN BODY ASSESSMENT -->
+<section class="panel body-assessment" id="body-assessment">
+
+    <p class="eyebrow">ASTRONAUT HEALTH EXAMINATION</p>
+    <h2>Interactive Human Body Assessment</h2>
+    <p>Explore the astronaut's body. Select a highlighted area to assess its health.</p>
+
+    <div class="body-explorer">
+
+        <!-- HUMAN BODY FIGURE -->
+        <div class="human-figure-container">
+
+            <div class="figure-label">FRONT VIEW</div>
+
+            <svg class="human-figure" viewBox="0 0 360 600"
+                 role="group" aria-label="Interactive human body diagram">
+
+                <defs>
+                    <linearGradient id="bodyGradient" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0%" stop-color="#d9eaf4"/>
+                        <stop offset="100%" stop-color="#789eb8"/>
+                    </linearGradient>
+                </defs>
+
+                <!-- HEAD -->
+                <circle cx="180" cy="76" r="43"
+                        fill="url(#bodyGradient)" stroke="#416c8b" stroke-width="2"/>
+
+                <!-- NECK -->
+                <rect x="164" y="116" width="32" height="34"
+                      rx="10" fill="url(#bodyGradient)"/>
+
+                <!-- BODY -->
+                <path d="M135 140 Q105 145 100 180
+                         L115 290 Q120 315 145 320
+                         L150 360 L210 360 L215 320
+                         Q240 315 245 290 L260 180
+                         Q255 145 225 140
+                         L200 130 L160 130 Z"
+                      fill="url(#bodyGradient)"
+                      stroke="#416c8b" stroke-width="2"/>
+
+                <!-- ARMS -->
+                <path d="M105 165 Q75 180 65 230
+                         L45 325 Q42 345 55 350
+                         Q70 353 77 330 L110 235"
+                      fill="url(#bodyGradient)"
+                      stroke="#416c8b" stroke-width="2"/>
+
+                <path d="M255 165 Q285 180 295 230
+                         L315 325 Q318 345 305 350
+                         Q290 353 283 330 L250 235"
+                      fill="url(#bodyGradient)"
+                      stroke="#416c8b" stroke-width="2"/>
+
+                <!-- LEGS -->
+                <path d="M145 320 L150 360
+                         L135 485 Q132 510 145 515
+                         L165 515 L180 365 L180 320 Z"
+                      fill="url(#bodyGradient)"
+                      stroke="#416c8b" stroke-width="2"/>
+
+                <path d="M215 320 L210 360
+                         L225 485 Q228 510 215 515
+                         L195 515 L180 365 L180 320 Z"
+                      fill="url(#bodyGradient)"
+                      stroke="#416c8b" stroke-width="2"/>
+
+                <!-- FEET -->
+                <ellipse cx="150" cy="530" rx="24" ry="13"
+                         fill="#789eb8"/>
+                <ellipse cx="210" cy="530" rx="24" ry="13"
+                         fill="#789eb8"/>
+
+                <!-- BODY DETAIL LINES -->
+                <path d="M180 150 L180 310"
+                      stroke="#416c8b" stroke-width="1.5" opacity=".5"/>
+
+                <!-- CLICKABLE HEALTH POINTS -->
+                <g class="body-hotspot" data-body="brain" tabindex="0" role="button" aria-label="Assess brain">
+                    <circle cx="180" cy="76" r="13"/>
+                    <text x="180" y="81">+</text>
+                </g>
+
+                <g class="body-hotspot" data-body="heart" tabindex="0" role="button" aria-label="Assess heart">
+                    <circle cx="194" cy="207" r="13"/>
+                    <text x="194" y="212">+</text>
+                </g>
+
+                <g class="body-hotspot" data-body="lungs" tabindex="0" role="button" aria-label="Assess lungs">
+                    <circle cx="180" cy="180" r="13"/>
+                    <text x="180" y="185">+</text>
+                </g>
+
+                <g class="body-hotspot" data-body="bones" tabindex="0" role="button" aria-label="Assess bones">
+                    <circle cx="155" cy="420" r="13"/>
+                    <text x="180" y="335">+</text>
+                </g>
+
+                <g class="body-hotspot" data-body="muscles" tabindex="0" role="button" aria-label="Assess muscles">
+                    <circle cx="125" cy="245" r="13"/>
+                    <text x="125" y="250">+</text>
+                </g>
+
+                <g class="body-hotspot" data-body="eyes" tabindex="0" role="button" aria-label="Assess eyes">
+                    <circle cx="180" cy="90" r="7"/>
+                </g>
+
+            </svg>
+
+            <p class="figure-instruction">
+                <span class="pulse-dot"></span>
+                SELECT A BODY POINT
+            </p>
+
+        </div>
+
+        <!-- HEALTH INFORMATION PANEL -->
+        <div class="body-info-panel" id="body-info-panel">
+
+            <p class="eyebrow">HEALTH SYSTEM INFORMATION</p>
+
+            <h3 id="body-title">Welcome, astronaut.</h3>
+
+            <p id="body-description">
+                Select a highlighted point on the human figure to
+                explore its function and possible spaceflight effects.
+            </p>
+
+            <div class="body-info-detail">
+                <h4>HEALTH INDICATORS</h4>
+                <p id="body-indicators">Waiting for selection...</p>
+            </div>
+
+            <div class="body-info-detail">
+                <h4>SPACEFLIGHT RISKS</h4>
+                <p id="body-risks">Select a body area to view its risks.</p>
+            </div>
+
+            <div class="body-info-detail">
+                <h4>RECOMMENDED ACTIONS</h4>
+                <p id="body-actions">Health guidance will appear here.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<style>
+.body-explorer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.human-figure-container {
+    background: #f0f5f8;
+    border-radius: 18px;
+    padding: 20px;
+    text-align: center;
+}
+
+.figure-label {
+    color: #416c8b;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.human-figure {
+    width: 100%;
+    max-width: 330px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+.body-hotspot {
+    cursor: pointer;
+    outline: none;
+}
+
+.body-hotspot circle {
+    fill: #ffffff;
+    stroke: #1685bd;
+    stroke-width: 3;
+    transition: .2s;
+}
+
+.body-hotspot text {
+    fill: #1685bd;
+    font-size: 17px;
+    font-weight: bold;
+    text-anchor: middle;
+    pointer-events: none;
+}
+
+.body-hotspot:hover circle,
+.body-hotspot.selected circle,
+.body-hotspot:focus circle {
+    fill: #1685bd;
+    stroke: #ffffff;
+    r: 16;
+}
+
+.body-hotspot:hover text,
+.body-hotspot.selected text {
+    fill: white;
+}
+
+.figure-instruction {
+    font-size: 11px;
+    color: #416c8b;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.pulse-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #1685bd;
+    margin-right: 6px;
+}
+
+.body-info-panel {
+    padding: 22px;
+    border: 1px solid #dce6ed;
+    border-radius: 18px;
+    background: white;
+}
+
+.body-info-panel h3 {
+    color: #19364d;
+    font-size: 25px;
+    margin: 12px 0;
+}
+
+.body-info-detail {
+    padding: 13px 0;
+    border-bottom: 1px solid #e5edf2;
+}
+
+.body-info-detail h4 {
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #39799f;
+    margin-bottom: 6px;
+}
+
+.body-info-detail p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #526579;
+}
+
+@media(max-width: 750px) {
+    .body-explorer {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<script>
+(function () {
+
+    const bodyData = {
+
+        brain: {
+            title: "Brain & Nervous System",
+            description: "The brain coordinates movement, balance, memory and decision-making.",
+            indicators: "Balance, coordination, sleep quality and cognitive performance.",
+            risks: "Microgravity can affect spatial orientation and balance. Radiation can also pose neurological risks.",
+            actions: "Follow adaptation procedures, maintain sleep routines and report persistent dizziness or neurological symptoms."
+        },
+
+        heart: {
+            title: "Heart & Circulation",
+            description: "The cardiovascular system circulates blood and delivers oxygen throughout the body.",
+            indicators: "Heart rate, blood pressure and cardiovascular response to exercise.",
+            risks: "Fluid redistribution and cardiovascular deconditioning can affect circulation during spaceflight.",
+            actions: "Follow prescribed exercise routines and report chest pain, fainting or unusual palpitations promptly."
+        },
+
+        lungs: {
+            title: "Lungs & Respiratory System",
+            description: "The lungs exchange oxygen and carbon dioxide to support the body's functions.",
+            indicators: "Respiratory rate, oxygen saturation and breathing symptoms.",
+            risks: "Changes in fluid distribution and spacecraft environmental conditions may affect respiratory health.",
+            actions: "Monitor breathing, maintain spacecraft air-quality procedures and report breathing difficulties immediately."
+        },
+
+        bones: {
+            title: "Bones & Skeletal System",
+            description: "Bones support the body, protect organs and store important minerals.",
+            indicators: "Bone density, exercise performance and relevant clinical assessments.",
+            risks: "Reduced mechanical loading in microgravity can cause loss of bone mineral density.",
+            actions: "Follow prescribed resistance exercise and nutrition plans. Calcium and vitamin D intake should follow mission medical guidance."
+        },
+
+        muscles: {
+            title: "Muscles & Physical Strength",
+            description: "Muscles support movement, posture and physical performance.",
+            indicators: "Muscle strength, exercise performance and fatigue.",
+            risks: "Microgravity can cause muscle atrophy and reduced strength.",
+            actions: "Complete scheduled resistance and aerobic exercise and report unusual weakness or persistent pain."
+        },
+
+        eyes: {
+            title: "Eyes & Vision",
+            description: "The eyes allow astronauts to see and interpret their surroundings.",
+            indicators: "Visual clarity, visual symptoms and medical eye examinations.",
+            risks: "Fluid shifts towards the head may contribute to spaceflight-associated neuro-ocular syndrome (SANS).",
+            actions: "Report blurred vision, visual changes or persistent headaches to the medical team."
+        }
+
+    };
+
+    const points = document.querySelectorAll("#body-assessment .body-hotspot");
+
+    function selectBodyPart(part) {
+
+        const data = bodyData[part];
+        if (!data) return;
+
+        points.forEach(point => {
+            point.classList.toggle("selected", point.dataset.body === part);
+        });
+
+        document.getElementById("body-title").textContent = data.title;
+        document.getElementById("body-description").textContent = data.description;
+        document.getElementById("body-indicators").textContent = data.indicators;
+        document.getElementById("body-risks").textContent = data.risks;
+        document.getElementById("body-actions").textContent = data.actions;
+
+        const assessButton = document.getElementById("body-assess-button");
+        assessButton.disabled = false;
+        assessButton.dataset.body = part;
+    }
+
+    points.forEach(point => {
+
+        point.addEventListener("click", () => {
+            selectBodyPart(point.dataset.body);
+        });
+
+        point.addEventListener("keydown", event => {
+            if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                selectBodyPart(point.dataset.body);
+            }
+        });
+
+    });
+
+    document.getElementById("body-assess-button").addEventListener("click", function () {
+        const selected = this.dataset.body;
+
+        if (selected) {
+            document.getElementById("body-info-panel").scrollIntoView({
+                behavior: "smooth",
+                block: "nearest"
+            });
+
+            alert("You selected the " + bodyData[selected].title +
+                  " assessment. Measurement input will be added in the next stage.");
+        }
+    });
+
+})();
+</script>
+<!-- END INTERACTIVE HUMAN BODY ASSESSMENT -->
+
+
+    <!-- ENVIRONMENT SELECTION -->
+    <div class="panel">
+        <h2>MISSION ENVIRONMENT</h2>
+        <p>Select your current mission environment.</p>
+
+        <select id="mission-environment">
+            <option value="spacecraft">Spacecraft</option>
+            <option value="station">Space Station</option>
+            <option value="rover">Space Rover</option>
+            <option value="moon">Moon Base</option>
+            <option value="planet">Other Planetary Base</option>
+        </select>
+
+        <div id="environment-guidance">
+            <h3>SPACECRAFT GUIDANCE</h3>
+            <p>
+                Secure medical equipment, follow onboard safety
+                procedures and complete scheduled health checks.
+            </p>
+        </div>
+    </div>
+
+    <!-- DAILY MEASUREMENT CHECKLIST -->
+    <div class="panel">
+        <h2>DAILY HEALTH CHECKLIST</h2>
+        <p>Complete your scheduled health measurements.</p>
+
+        <div class="assessment-checklist">
+            <label><input type="checkbox" class="health-task"> Heart Rate</label>
+            <label><input type="checkbox" class="health-task"> Blood Oxygen</label>
+            <label><input type="checkbox" class="health-task"> Body Temperature</label>
+            <label><input type="checkbox" class="health-task"> Blood Pressure</label>
+            <label><input type="checkbox" class="health-task"> Respiratory Rate</label>
+            <label><input type="checkbox" class="health-task"> Sleep Assessment</label>
+        </div>
+
+        <p id="assessment-progress">
+            0 / 6 tasks completed
+        </p>
+    </div>
+
+    <!-- HEALTH MEASUREMENT EDUCATION -->
+    <div class="assessment-grid">
+
+        <article class="panel">
+            <h2>♡ HEART RATE</h2>
+            <h3>How to measure</h3>
+            <p>
+                Use an approved heart-rate monitor while resting.
+            </p>
+            <h3>Why it matters</h3>
+            <p>
+                Monitors cardiovascular activity and physical stress.
+            </p>
+            <h3>Possible risks</h3>
+            <p>
+                Unusual readings may require further assessment,
+                especially when accompanied by dizziness or chest pain.
+            </p>
+        </article>
+
+        <article class="panel">
+            <h2>◉ BLOOD OXYGEN</h2>
+            <h3>How to measure</h3>
+            <p>
+                Place an approved pulse oximeter on your finger
+                and wait for a stable reading.
+            </p>
+            <h3>Why it matters</h3>
+            <p>
+                Estimates oxygen saturation in the blood.
+            </p>
+            <h3>Possible risks</h3>
+            <p>
+                Unexpected readings or breathing difficulties
+                require prompt medical assessment.
+            </p>
+        </article>
+
+        <article class="panel">
+            <h2>♨ BODY TEMPERATURE</h2>
+            <h3>How to measure</h3>
+            <p>
+                Use an approved digital thermometer according
+                to its instructions.
+            </p>
+            <h3>Why it matters</h3>
+            <p>
+                Helps identify possible illness and temperature
+                regulation problems.
+            </p>
+            <h3>Possible risks</h3>
+            <p>
+                Unusual temperature readings may indicate a
+                condition that needs medical attention.
+            </p>
+        </article>
+
+        <article class="panel">
+            <h2>BLOOD PRESSURE</h2>
+            <h3>How to measure</h3>
+            <p>
+                Use an approved blood pressure monitor and
+                follow its positioning instructions.
+            </p>
+            <h3>Why it matters</h3>
+            <p>
+                Helps assess the circulatory system.
+            </p>
+            <h3>Possible risks</h3>
+            <p>
+                Unexpected readings may require repeat
+                measurements and medical review.
+            </p>
+        </article>
+
+        <article class="panel">
+            <h2>RESPIRATORY RATE</h2>
+            <h3>How to measure</h3>
+            <p>
+                While resting, count complete breaths for
+                60 seconds.
+            </p>
+            <h3>Why it matters</h3>
+            <p>
+                Helps monitor breathing patterns.
+            </p>
+            <h3>Possible risks</h3>
+            <p>
+                Serious breathing difficulties require
+                immediate emergency assistance.
+            </p>
+        </article>
+
+        <article class="panel">
+            <h2>☾ SLEEP ASSESSMENT</h2>
+            <h3>How to measure</h3>
+            <p>
+                Record sleep duration and quality in Daily Check-in.
+            </p>
+            <h3>Why it matters</h3>
+            <p>
+                Sleep supports memory, recovery and concentration.
+            </p>
+            <h3>Possible risks</h3>
+            <p>
+                Persistent sleep deprivation can affect
+                alertness and mission performance.
+            </p>
+        </article>
+
+    </div>
+
+    <!-- EMERGENCY GUIDANCE -->
+    <div class="panel assessment-emergency">
+
+        <h2>⚠ EMERGENCY RESPONSE GUIDANCE</h2>
+
+        <p>
+            If an astronaut experiences severe symptoms:
+        </p>
+
+        <ol>
+            <li>Activate the mission emergency response protocol.</li>
+            <li>Notify the crew medical officer and Mission Control.</li>
+            <li>Assess the astronaut's condition.</li>
+            <li>Provide assistance according to medical training.</li>
+            <li>Follow mission-specific emergency procedures.</li>
+        </ol>
+
+        <p class="demo-note">
+            EDUCATIONAL SIMULATION ONLY.
+            This website does not provide real medical diagnosis.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- MISSION ROUTINE PAGE -->
+<section id="routine" class="page hidden">
+
+    <div class="page-header">
+        <p class="eyebrow">MISSION CONTROL / CREW PERFORMANCE</p>
+        <h1>MISSION ROUTINE</h1>
+        <p class="muted">Daily wellness objectives and crew achievements</p>
+    </div>
+
+    <!-- XP DASHBOARD -->
+    <div class="panel routine-xp">
+
+        <span class="status-label">ASTRONAUT EXPERIENCE</span>
+        <h2>MISSION LEVEL <span id="mission-level">01</span></h2>
+
+        <div class="xp-stats">
+            <div>
+                <strong id="total-xp">0</strong>
+                <span> TOTAL XP</span>
+            </div>
+
+            <div>
+                <strong id="daily-streak">0</strong>
+                <span> DAY STREAK</span>
+            </div>
+
+            <div>
+                <strong id="completed-routines">0/6</strong>
+                <span> TASKS TODAY</span>
+            </div>
+        </div>
+
+        <p>Progress to next mission level</p>
+
+        <div class="xp-progress-track">
+            <div id="xp-progress-bar" class="xp-progress-fill"></div>
+        </div>
+
+        <p id="xp-progress-text">0 / 100 XP</p>
+
+    </div>
+
+    <!-- DAILY TASKS -->
+    <div class="panel">
+
+        <h2>DAILY MISSION OBJECTIVES</h2>
+        <p class="muted">
+            Complete your wellness tasks to earn mission XP.
+            Each task can earn XP only once per day.
+        </p>
+
+        <div class="routine-task-list">
+
+            <label class="routine-task">
+                <input type="checkbox" class="routine-task-check" data-xp="20">
+                <span>
+                    <strong>Morning Health Assessment</strong>
+                    <small>Record your scheduled vital signs.</small>
+                </span>
+                <span class="xp-reward">+20 XP</span>
+            </label>
+
+            <label class="routine-task">
+                <input type="checkbox" class="routine-task-check" data-xp="15">
+                <span>
+                    <strong>Hydration Check</strong>
+                    <small>Review your hydration routine.</small>
+                </span>
+                <span class="xp-reward">+15 XP</span>
+            </label>
+
+            <label class="routine-task">
+                <input type="checkbox" class="routine-task-check" data-xp="20">
+                <span>
+                    <strong>Physical Exercise</strong>
+                    <small>Complete your scheduled exercise.</small>
+                </span>
+                <span class="xp-reward">+20 XP</span>
+            </label>
+
+            <label class="routine-task">
+                <input type="checkbox" class="routine-task-check" data-xp="15">
+                <span>
+                    <strong>Nutrition Review</strong>
+                    <small>Review your daily meal plan.</small>
+                </span>
+                <span class="xp-reward">+15 XP</span>
+            </label>
+
+            <label class="routine-task">
+                <input type="checkbox" class="routine-task-check" data-xp="15">
+                <span>
+                    <strong>Evening Health Assessment</strong>
+                    <small>Complete your scheduled evening check.</small>
+                </span>
+                <span class="xp-reward">+15 XP</span>
+            </label>
+
+            <label class="routine-task">
+                <input type="checkbox" class="routine-task-check" data-xp="15">
+                <span>
+                    <strong>Sleep Preparation</strong>
+                    <small>Record your sleep plan and prepare to rest.</small>
+                </span>
+                <span class="xp-reward">+15 XP</span>
+            </label>
+
+        </div>
+
+        <p id="routine-message" role="status">
+            Mission objectives awaiting completion.
+        </p>
+
+    </div>
+
+    <!-- ACHIEVEMENTS -->
+    <div class="panel">
+
+        <h2>CREW ACHIEVEMENTS</h2>
+        <p class="muted">Unlock achievements through healthy routines.</p>
+
+        <div class="achievement-grid">
+
+            <div class="achievement-card" id="achievement-first">
+                <span>🛰️</span>
+                <strong>FIRST CONTACT</strong>
+                <small>Complete your first task.</small>
+                <span class="achievement-status">LOCKED</span>
+            </div>
+
+            <div class="achievement-card" id="achievement-half">
+                <span>🌙</span>
+                <strong>HALFWAY THERE</strong>
+                <small>Complete three daily tasks.</small>
+                <span class="achievement-status">LOCKED</span>
+            </div>
+
+            <div class="achievement-card" id="achievement-all">
+                <span>🚀</span>
+                <strong>MISSION READY</strong>
+                <small>Complete all six daily tasks.</small>
+                <span class="achievement-status">LOCKED</span>
+            </div>
+
+            <div class="achievement-card" id="achievement-level">
+                <span>🏆</span>
+                <strong>RISING ASTRONAUT</strong>
+                <small>Reach mission level 2.</small>
+                <span class="achievement-status">LOCKED</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <p class="demo-note">
+        Gamification is designed to encourage participation.
+        XP and achievements do not represent medical fitness.
+    </p>
+
+</section>
+
+        <section id="trends" class="page hidden">
+            <p class="eyebrow">MISSION CONTROL / ANALYTICS</p>
+            <h1>Health Trends</h1>
+            <p class="muted">Simulated heart rate history</p>
+            
+<div class="panel">
+    <h2>HEART RATE TRENDS</h2>
+    <p class="muted">Changes in heart rate over time</p>
+    <canvas id="trendChart"></canvas>
+</div>
+
+<div class="panel">
+    <h2>BLOOD OXYGEN TRENDS</h2>
+    <p class="muted">Simulated oxygen saturation history</p>
+    <canvas id="oxygenChart"></canvas>
+</div>
+
+<div class="panel">
+    <h2>BODY TEMPERATURE TRENDS</h2>
+    <p class="muted">Simulated temperature history</p>
+    <canvas id="temperatureChart"></canvas>
+</div>
+
+<div class="panel">
+    <h2>SLEEP DURATION TRENDS</h2>
+    <p class="muted">Recorded sleep duration in hours</p>
+    <canvas id="sleepChart"></canvas>
+</div>
+
+        </section>
+
+        <!-- HEALTH ASSESSMENT REPORTS PAGE -->
+<section id="alerts" class="page hidden">
+
+    <p class="eyebrow">ASTROGUARD / MEDICAL RECORDS</p>
+    <h1>Health Assessment Reports</h1>
+    <p class="muted">
+        Review your astronaut health assessment results and recommendations.
+    </p>
+
+    <div id="report-empty" class="panel">
+        <h2>No Assessment Reports Yet</h2>
+        <p>
+            Complete a body assessment to generate your first health report.
+        </p>
+    </div>
+
+    <div id="health-report" class="panel" hidden>
+
+        <p class="eyebrow">ASTRONAUT HEALTH REPORT</p>
+        <h2 id="report-title">Health Assessment</h2>
+
+        <p id="report-date"></p>
+
+        <div class="body-info-detail">
+            <h4>ASSESSMENT STATUS</h4>
+            <p id="report-status"></p>
+        </div>
+
+        <div class="body-info-detail">
+            <h4>MEASUREMENT SUMMARY</h4>
+            <div id="report-measurements"></div>
+        </div>
+
+        <div class="body-info-detail">
+            <h4>HEALTH ANALYSIS</h4>
+            <p id="report-analysis"></p>
+        </div>
+
+        <div class="body-info-detail">
+            <h4>RECOMMENDED ACTIONS</h4>
+            <p id="report-actions"></p>
+        </div>
+
+        <div class="body-info-detail">
+            <h4>MEDICAL GUIDANCE</h4>
+            <p id="report-guidance">
+                Contact the flight surgeon if you experience concerning symptoms.
+            </p>
+        </div>
+
+        <button type="button" class="primary-button" onclick="window.print()">
+            Print Health Report
+        </button>
+
+    </div>
+
+</section>
+
+        <section id="checkin" class="page hidden">
+            <p class="eyebrow">MISSION CONTROL / CREW WELLNESS</p>
+            <h1>Daily Check-in</h1>
+            <p class="muted">Record the crew member's daily wellness data</p>
+            <div class="panel">
+                <form id="checkinForm">
+                    <label for="sleepInput">Sleep (hours)</label>
+                    <input id="sleepInput" type="number" min="0" max="24" step="0.5" required>
+                    <label for="energyInput">Energy (1–5)</label>
+                    <input id="energyInput" type="number" min="1" max="5" required>
+                    <label for="stressInput">Stress (1–5)</label>
+                    <input id="stressInput" type="number" min="1" max="5" required>
+                    <label for="exerciseInput">Exercise (minutes)</label>
+                    <input id="exerciseInput" type="number" min="0" required>
+                    <button type="submit" class="primary-button">Submit Check-in</button>
+                    <p id="checkin-message" role="status"></p>
+                </form>
+            </div>
+        </section>
+
+<!-- CREW MENTAL HEALTH PAGE -->
+<section id="mentalhealth" class="page hidden">
+
+    <div class="page-header">
+        <p class="eyebrow">MISSION CONTROL / CREW WELLNESS</p>
+        <h1>CREW MENTAL HEALTH</h1>
+        <p class="muted">
+            Supporting psychological wellbeing and cognitive performance
+            throughout space missions.
+        </p>
+    </div>
+
+    <div class="mental-health-intro">
+        <span class="mental-label">PSYCHOLOGICAL WELLBEING SYSTEM</span>
+        <h2>A healthy mind supports a successful mission.</h2>
+        <p>
+            Long-duration space missions can expose crew members to isolation,
+            stress, disrupted sleep and demanding working conditions.
+            ASTROGUARD promotes prevention, early awareness and continued support.
+        </p>
+    </div>
+
+    <h2>01 / PREVENTION DURING THE MISSION</h2>
+
+    <div class="mental-health-grid">
+
+        <div class="mental-health-card">
+            <span class="mental-icon">🌙</span>
+            <h3>Sleep Management</h3>
+            <p>
+                Maintain a consistent sleep schedule and allow sufficient
+                rest to reduce fatigue and support concentration.
+            </p>
+        </div>
+
+        <div class="mental-health-card">
+            <span class="mental-icon">🏃</span>
+            <h3>Physical Activity</h3>
+            <p>
+                Follow the mission exercise programme to support physical
+                wellbeing and help manage stress.
+            </p>
+        </div>
+
+        <div class="mental-health-card">
+            <span class="mental-icon">🤝</span>
+            <h3>Social Connection</h3>
+            <p>
+                Maintain supportive relationships with crewmates and
+                communicate regularly with family when possible.
+            </p>
+        </div>
+
+        <div class="mental-health-card">
+            <span class="mental-icon">🧘</span>
+            <h3>Stress Management</h3>
+            <p>
+                Practise relaxation, breathing exercises and enjoyable
+                activities to manage mission-related stress.
+            </p>
+        </div>
+
+        <div class="mental-health-card">
+            <span class="mental-icon">🎯</span>
+            <h3>Structured Routine</h3>
+            <p>
+                Balance work, rest, recreation and personal time to
+                maintain a stable daily routine.
+            </p>
+        </div>
+
+        <div class="mental-health-card">
+            <span class="mental-icon">💬</span>
+            <h3>Open Communication</h3>
+            <p>
+                Encourage crew members to discuss concerns and seek
+                support without fear of judgement.
+            </p>
+        </div>
+
+    </div>
+
+    <h2>02 / EARLY WARNING SIGNS</h2>
+
+    <div class="mental-warning-panel">
+        <h3>Changes that may require attention</h3>
+        <ul>
+            <li>Persistent sadness, anxiety or irritability</li>
+            <li>Difficulty concentrating or making decisions</li>
+            <li>Unusual changes in sleep patterns</li>
+            <li>Withdrawal from crewmates or social activities</li>
+            <li>Unusual changes in behaviour or motivation</li>
+            <li>Difficulty completing normal mission tasks</li>
+        </ul>
+
+        <p>
+            These signs do not automatically indicate a psychiatric disorder.
+            Persistent, severe or concerning changes should be reported
+            to the mission medical or psychological support team.
+        </p>
+    </div>
+
+    <h2>03 / CONTINUED SUPPORT AND FOLLOW-UP</h2>
+
+    <div class="mental-health-grid">
+
+        <div class="mental-health-card">
+            <span class="mental-icon">📋</span>
+            <h3>Regular Check-ins</h3>
+            <p>
+                Monitor changes in mood, sleep, stress and daily functioning
+                through regular confidential wellbeing check-ins.
+            </p>
+        </div>
+
+        <div class="mental-health-card">
+            <span class="mental-icon">🧑‍⚕️</span>
+            <h3>Professional Support</h3>
+            <p>
+                Provide access to qualified medical and mental-health
+                professionals when concerns arise.
+            </p>
+        </div>
+
+        <div class="mental-health-card">
+            <span class="mental-icon">🌍</span>
+            <h3>Post-Mission Monitoring</h3>
+            <p>
+                Continue appropriate follow-up after returning to Earth
+                to identify possible long-term changes in cognitive
+                and behavioural health.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="mental-health-note">
+        <strong>MISSION SAFETY NOTICE</strong>
+        <p>
+            ASTROGUARD provides educational wellbeing guidance.
+            It does not diagnose psychiatric disorders or replace
+            professional psychological or medical care.
+            Mental-health concerns should be assessed by qualified
+            professionals using established mission procedures.
+        </p>
+    </div>
+
+</section>
+
+        
+<!-- MISSION CONTROL COMMUNICATION -->
+<section id="communication" class="page hidden">
+
+    <div class="page-header">
+        <p class="eyebrow">MISSION CONTROL / COMMUNICATIONS</p>
+        <h1>Mission Comms</h1>
+        <p class="muted">Secure simulated communication channel for ASTRYN-X0</p>
+    </div>
+
+    <div class="comms-layout">
+
+        <!-- CONNECTION STATUS -->
+        <div class="comms-status-panel">
+            <div class="comms-status-top">
+                <div class="comms-radio-icon">⌁</div>
+                <div>
+                    <span class="comms-label">COMMUNICATION LINK</span>
+                    <h2>EARTH ↔ ASTRYN-X0</h2>
+                </div>
+            </div>
+
+            <div class="comms-status-row">
+                <span>CHANNEL STATUS</span>
+                <span class="comms-online">
+                    <span class="comms-dot"></span>
+                    SIMULATION ONLINE
+                </span>
+            </div>
+
+            <div class="comms-status-row">
+                <span>CREW ID</span>
+                <strong>ASTRYN-X0</strong>
+            </div>
+
+            <div class="comms-status-row">
+                <span>MESSAGE MODE</span>
+                <strong>TEXT TRANSMISSION</strong>
+            </div>
+
+            <p class="comms-disclaimer">
+                DEMO CHANNEL · NO REAL TRANSMISSION
+            </p>
+        </div>
+
+        <!-- CHAT WINDOW -->
+        <div class="comms-chat-panel">
+
+            <div class="comms-chat-header">
+                <div>
+                    <span class="comms-label">LIVE CHANNEL</span>
+                    <h2>Mission Control</h2>
+                </div>
+                <span class="comms-channel-tag">CH-01</span>
+            </div>
+
+            <div
+                id="comms-messages"
+                class="comms-messages"
+                aria-live="polite"
+                aria-label="Simulated communication messages"
+            >
+                <div class="comms-message mission-message">
+                    <span class="comms-sender">MISSION CONTROL</span>
+                    <p>
+                        ASTRYN-X0, communication system initialized.
+                        Send a report when you are ready.
+                    </p>
+                    <span class="comms-time">SYSTEM MESSAGE</span>
+                </div>
+            </div>
+
+            <div class="comms-quick-actions">
+                <span class="comms-label">QUICK TRANSMISSION</span>
+
+                <div class="comms-quick-buttons">
+                    <button type="button" data-comms-message="Routine status update: crew check-in complete.">
+                        Routine update
+                    </button>
+
+                    <button type="button" data-comms-message="Health concern: I would like Mission Control to review my simulated readings.">
+                        Health concern
+                    </button>
+
+                    <button type="button" data-comms-message="Request assistance: please advise on the next mission procedure.">
+                        Request assistance
+                    </button>
+                </div>
+            </div>
+
+            <form id="comms-form" class="comms-compose">
+                <label for="comms-input">TRANSMIT MESSAGE</label>
+
+                <div class="comms-input-row">
+                    <input
+                        id="comms-input"
+                        type="text"
+                        maxlength="300"
+                        placeholder="Enter your message..."
+                        autocomplete="off"
+                        required
+                    >
+
+                    <button type="submit" id="comms-send">
+                        TRANSMIT ↗
+                    </button>
+                </div>
+
+                <p id="comms-feedback" role="status">
+                    Ready to transmit simulated message.
+                </p>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="comms-footer">
+        <span>ASTROGUARD COMMUNICATIONS MODULE</span>
+        <span>SIMULATED DATA ONLY</span>
+    </div>
+
+</section>
+
+    </main>
+</body>
+</html>
